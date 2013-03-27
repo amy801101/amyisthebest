@@ -56,13 +56,46 @@
 		#page{
 			border: none;
 		}
+		#subheader{
+			border: none;
+			text-align: right;
+			position: relative; left: 650px; top: 0px;
+		}
+		#subheader #pages_label{
+			background: url(http://subtlepatterns.com/patterns/mochaGrunge.png);
+			width: 130px;
+			height: 30px;
+			text-align: center;
+			font-family: 'Purple Purse', cursive;
+			font-size: 18px;
+			color: white;
+			text-shadow: 1px 1px #3F372B;
+			border-right: solid 2px black;
+			border-bottom: solid 1px black;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+		#subheader #pages_label a{
+			text-decoration: none;
+			color: white;
+		}
+		#subheader #pages_label a:hover{
+			text-decoration: none;
+			color: #FFFF99;
+		}
+		#subheader #pages_label a:visited{
+			text-decoration: none;
+		}
 		#page .content{
-			background: url(http://subtlepatterns.com/patterns/paper.png);
+			background: url(http://subtlepatterns.com/patterns/linedpaper.png);
 			font-size: 18px;
 		}
 		#page #Personal p{
 			background: url(http://subtlepatterns.com/patterns/linedpaper.png);
 			font-size: 18px;
+			margin-top: 30px
 		}
 		#page h3{
 			font-family: 'Purple Purse', cursive;
@@ -70,14 +103,14 @@
 		.skilltitle{
 			font-size: 18px;
 		}
-		a{
+		.content a{
 			color: #336633;
 			text-decoration: none;
 		}
-		a:hover{
+		.content a:hover{
 			text-decoration: underline;
 		}
-		a:visited{
+		.content a:visited{
 			color: #009933;
 			text-decoration: none;
 		}
@@ -105,15 +138,18 @@
 					<h1>Amy Lee</h1><br>
 					<h2>Cel: 0958-xxx-xxx<br>
 					   Email: 99703004@nccu.edu.tw</h2>
-				</div><br><br>
-
+				</div>
 			</div>
 		</header>
+		<div id="subheader" class="grid_12">
+			<div id="pages_label" class="grid_10"><a href="#page">Personal CV</a></div>
+			<div id="pages_label" class="grid_2"><a href="">Contact Me</a></div>
+		</div>
 		<div id="page" class="grid_12">
 			<!--div class="grid_3"><img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash4/299342_227318703991820_1963910874_n.jpg"></div-->
 			<div id="Personal" class="grid_12">
 				<!--h3>Personal profile<h3-->
-				<p>I am Lee, Amy is my English name. From a single-parent family, instead of asking public for pity, I have learned to live independent, and the different background makes me more perseverant in not only leading my way of study but also in my life. </p><br>
+				<p>I am Lee, Amy is my English name. From a single-parent family, instead of asking public for pity, I have learned to live independent, and the different background makes me more perseverant in not only leading my way of study but also in my life. </p>
 			</div>
 			<div class="grid_4 alpha">
 				<h3>Education</h3>
@@ -147,13 +183,13 @@
 				</ul></div>
 			</div><br>
 			<div class="grid_12">
-				<h3>Portfolio</h3>
+				<h3 >Portfolio</h3>
 			</div>	
 			<div class="grid_3 alpha">
 				<div class="content">
 					<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash4/317517_558328437533325_1885506044_n.jpg"width="220px" height="150px">
 					<div>
-						<h4>The Thief</h4>
+						<h4 id="portfolio">The Thief</h4>
 						<div class="p"> Interative App Games for multiple players by catching furniture all together.<br><br></div>
 					</div>
 				</div>
@@ -170,7 +206,7 @@
 			</div>
 			<div class="grid_3">
 				<div class="content">
-					<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/527678_558328450866657_1995025758_n.jpg" width="220px" height="150px">
+					<img src="http://25.media.tumblr.com/baf2178be3331248ebab5444720e6985/tumblr_mk9838uaTE1s7tawdo1_500.png" width="220px" height="150px">
 					<div>
 						<h4>Learning Chinese Words!</h4>
 						<div class="p"> Educational app games for children to know the correct combination of Chinese words.<br><br></div>
@@ -187,6 +223,6 @@
 				</div>
 			</div>
 		</div>
-	</section><br><br><br>
+	</section><br><br><br><br><br>
 </body>
 </html>
