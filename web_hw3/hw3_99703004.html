@@ -1,0 +1,290 @@
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Homework_3 99703004 資科三 李孟蓁</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="css/bootstrap.css" rel="stylesheet"> 
+	<style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"-->
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+    <body>
+    	<div class="container">
+    		<div class="span4">
+    			<h3>功能1. 直接點擊</h3>
+    				<div id="method1">
+                        <div class="Taipei btn btn-link" id="2306188">七堵</div>
+
+    					<div class="Taipei btn btn-link" id="2306179">內湖</div>
+    					<div class="Taipei btn btn-link" id="2306186">新店</div>
+
+                        <div class="Taipei btn btn-link" id="2306211">淡水</div>
+                        <div class="Taipei btn btn-link" id="2306214">鶯歌</div>
+                        <div class="Taipei btn btn-link" id="2306223">金山</div>
+                        <div class="Taipei btn btn-link" id="2306228">三芝</div>
+                        <div class="btn btn-link" id="2306231">萬里</div>
+                        <div class="btn btn-link" id="2306251">雙溪</div>
+
+                        <div class="btn btn-link" id="2306209">大園</div>
+                        <div class="btn btn-link" id="2306184">中壢</div>
+                        <div class="btn btn-link" id="2306200">觀音</div>
+                        <div class="btn btn-link" id="2306202">龍潭</div>
+                        <div class="btn btn-link" id="2306254">桃園國際機場</div>
+                        
+                        <div class="btn btn-link" id="2306185">東區</div>
+                        
+                        <div class="btn btn-link" id="2306229">三灣</div>
+                        
+                        <div class="btn btn-link" id="2306181">西屯</div>
+                        <div class="btn btn-link" id="2306207">石岡</div>
+                        <div class="btn btn-link" id="2306194">清水</div>
+                        <div class="btn btn-link" id="2306218">新社</div>
+                        <div class="btn btn-link" id="2306210">大甲</div>
+                        
+                        <div class="btn btn-link" id="2306183">彰化市</div>
+                        <div class="btn btn-link" id="2306195">二林</div>
+                        <div class="btn btn-link" id="2306201">鹿港</div>
+                        
+                        <div class="btn btn-link" id="2306212">斗南</div>
+                        <div class="btn btn-link" id="2306250">虎尾</div>
+                        
+                        <div class="btn btn-link" id="2306206">布袋</div>
+                        
+                        <div class="btn btn-link" id="2306182">安平</div>
+                        <div class="btn btn-link" id="2306193">佳里</div>
+                        <div class="btn btn-link" id="2306203">麻豆</div>
+                        <div class="btn btn-link" id="2306217">新化</div>
+                        <div class="btn btn-link" id="2306232">玉井</div>
+                        
+                        <div class="btn btn-link" id="2306180">左營</div>
+                        <div class="btn btn-link" id="2306199">岡山</div>
+                        <div class="btn btn-link" id="2306255">高雄國際機場</div>
+                        
+                        <div class="btn btn-link" id="2306189">屏東市</div>
+                        <div class="btn btn-link" id="2306213">東港</div>
+                        <div class="btn btn-link" id="2306224">枋山</div>
+
+                        <div class="btn btn-link" id="2306198">宜蘭市</div>
+                        <div class="btn btn-link" id="2306208">蘇澳</div>
+                        <div class="btn btn-link" id="2306243">南澳</div>
+                         
+                        <div class="btn btn-link" id="2306187">花蓮市</div>
+                         
+                        <div class="btn btn-link" id="2306190">台東市</div>
+                        <div class="btn btn-link" id="2306227">關山</div>
+                         
+                        <div class="btn btn-link" id="2306204">南投市</div>
+
+    				</div>
+    			<h3>功能2. 下拉式選單</h3>
+    			<div id="method2">
+    				<select class="selectpicker show-tick" id="citybox1">
+                        <option id="1">基隆</option>
+                        <option id="2">台北</option>
+                        <option id="3">新北市</option>
+                        <option id="4">桃園</option>
+                        <option id="5">新竹</option>
+                        <option id="6">苗栗</option>
+                        <option id="7">台中</option>
+                        <option id="8">彰化</option>
+                        <option id="9">雲林</option>
+                        <option id="10">嘉義</option>
+                        <option id="11">台南</option>
+                        <option id="12">高雄</option>
+                        <option id="13">屏東</option>
+                        <option id="14">宜蘭</option>
+                        <option id="15">花蓮</option>
+                        <option id="16">台東</option>
+                        <option id="17">南投</option>
+                    </select>
+    				<select class="selectpicker show-tick" id="citybox2">
+                        <option id="2306188">七堵</option>
+                    </select>
+    			</div>
+    			<div id="method3"></div>
+    		</div>
+    		<div class="span7">
+    			<div class="hero-unit" id="result">
+    				<h4>Title</h4>
+    				<div id="title"></div>
+    				<h4>Date</h4>
+    				<div id="date"></div>
+    				<h4>Location</h4>
+    				<div id="location"></div>
+    				<h4>Temp</h4>
+    				<div id="temp"></div>
+    				<h4>Text</h4>
+    				<div id="text"></div>
+    			</div>
+    		</div>
+    	</div> 
+
+         <script src="js/jquery-1.9.1.min.js"></script> 
+         <script src="js/bootstrap.min.js"></script> 
+
+        <script type="text/javascript"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+        </script>
+    	<script type="text/javascript">
+    		var woeid = 2306188;
+			var query = 'select * from weather.forecast where woeid=' + woeid;
+			var url = 'http://query.yahooapis.com/v1/public/yql?format=json&q=' + query;
+
+            function updateAllDetail (newID){
+                woeid = newID;
+                query = 'select * from weather.forecast where woeid=' + woeid;
+                url = 'http://query.yahooapis.com/v1/public/yql?format=json&q=' + query;
+                console.log(woeid);
+            }
+
+            $('div.btn').on('click', function(){ 
+                updateAllDetail($(this).attr('id')); 
+                refreshJSON();
+            });
+
+           /* $('div.btn').on('click', function(e){
+                woeid = $(this).attr('id');
+                console.log(woeid);
+            });*/
+            function refreshJSON (){
+	    	  $.getJSON( url, function(data) {
+                $('#result #title').text(data.query.results.channel.item.title);
+                $('#result #date').text(data.query.results.channel.item.condition.date);
+                $('#result #location').text(data.query.results.channel.item.lat + ',' + data.query.results.channel.item.long);
+                $('#result #temp').text(data.query.results.channel.item.condition.temp + '℉');
+                $('#result #text').text(data.query.results.channel.item.condition.text);
+                });
+            }
+
+            $.getJSON( url, function(data) {
+                $('#title').append('<p>' + data.query.results.channel.item.title + '</p>');
+                $('#date').append('<p>' + data.query.results.channel.item.condition.date + '</p>');
+                $('#location').append('<p>' + data.query.results.channel.item.lat + ',' + data.query.results.channel.item.long + '</p>');
+                $('#temp').append('<p>' + data.query.results.channel.item.condition.temp + '℉' + '</p>');
+                $('#text').append('<p>' + data.query.results.channel.item.condition.text + '</p>');
+            });
+
+            $('#citybox1').change(function(){
+                var region = $(this).find(':selected').attr('id');
+
+                $('#citybox2').children().remove();
+                if(region == 1){
+                    $('#citybox2').append('<option id="2306188">' + '七堵' + '</option>');
+                    updateAllDetail(2306188);
+                }
+                else if(region == 2){
+                    $('#citybox2').append('<option id="2306179">' + '內湖' + '</option>');
+                    $('#citybox2').append('<option id="2306186">' + '新店' + '</option>');
+                    updateAllDetail(2306179);
+                }
+                else if(region == 3){
+                    $('#citybox2').append('<option id="2306211">' + '淡水' + '</option>');
+                    $('#citybox2').append('<option id="2306214">' + '鶯歌' + '</option>');
+                    $('#citybox2').append('<option id="2306223">' + '金山' + '</option>');
+                    $('#citybox2').append('<option id="2306228">' + '三芝' + '</option>');
+                    $('#citybox2').append('<option id="2306231">' + '萬里' + '</option>');
+                    $('#citybox2').append('<option id="2306251">' + '雙溪' + '</option>');
+                    updateAllDetail(2306211);
+                }                
+                else if(region == 4){
+                    $('#citybox2').append('<option id="2306209">' + '大園' + '</option>');
+                    $('#citybox2').append('<option id="2306184">' + '中壢' + '</option>');
+                    $('#citybox2').append('<option id="2306200">' + '觀音' + '</option>');
+                    $('#citybox2').append('<option id="2306202">' + '龍潭' + '</option>');
+                    $('#citybox2').append('<option id="2306254">' + '桃園國際機場' + '</option>');
+                        
+                    updateAllDetail(2306209);
+                }
+                else if(region == 5){
+                    $('#citybox2').append('<option id="2306185">' + '東區' + '</option>');
+                    updateAllDetail(2306185);
+                }
+                else if(region == 6){
+                    $('#citybox2').append('<option id="2306229">' + '三灣' + '</option>');
+                    updateAllDetail(2306229);
+                }
+                else if(region == 7){
+                    $('#citybox2').append('<option id="2306181">' + '西屯' + '</option>');
+                    $('#citybox2').append('<option id="2306207">' + '石岡' + '</option>');
+                    $('#citybox2').append('<option id="2306194">' + '清水' + '</option>');
+                    $('#citybox2').append('<option id="2306218">' + '新社' + '</option>');
+                    $('#citybox2').append('<option id="2306210">' + '大甲' + '</option>');
+                    updateAllDetail(2306181);
+                }
+                else if(region == 8){
+                    $('#citybox2').append('<option id="2306183">' + '彰化市' + '</option>');
+                    $('#citybox2').append('<option id="2306195">' + '二林' + '</option>');
+                    $('#citybox2').append('<option id="2306201">' + '鹿港' + '</option>');
+                    updateAllDetail(2306183);
+                }
+                else if(region == 9){
+                    $('#citybox2').append('<option id="2306212">' + '斗南' + '</option>');
+                    $('#citybox2').append('<option id="2306250">' + '虎尾' + '</option>');
+                        
+                    updateAllDetail(2306212);
+                }
+                else if(region == 10){
+                    $('#citybox2').append('<option id="2306206">' + '布袋' + '</option>');
+                    updateAllDetail(2306206);
+                }
+                else if(region == 11){
+                    $('#citybox2').append('<option id="2306182">' + '安平' + '</option>');
+                    $('#citybox2').append('<option id="2306193">' + '佳里' + '</option>');
+                    $('#citybox2').append('<option id="2306203">' + '麻豆' + '</option>');
+                    $('#citybox2').append('<option id="2306217">' + '新化' + '</option>');
+                    $('#citybox2').append('<option id="2306232">' + '玉井' + '</option>');
+                    
+                    updateAllDetail(2306182);
+                }
+                else if(region == 12){
+                    $('#citybox2').append('<option id="2306180">' + '左營' + '</option>');
+                    $('#citybox2').append('<option id="2306199">' + '岡山' + '</option>');
+                    $('#citybox2').append('<option id="2306255">' + '高雄國際機場' + '</option>');
+                    updateAllDetail(2306180);
+                }
+                else if(region == 13){
+                    $('#citybox2').append('<option id="2306189">' + '屏東市' + '</option>');
+                    $('#citybox2').append('<option id="2306213">' + '東港' + '</option>');
+                    $('#citybox2').append('<option id="2306224">' + '枋山' + '</option>');
+                    updateAllDetail(2306189);
+                }
+                else if(region == 14){
+                    $('#citybox2').append('<option id="2306198">' + '宜蘭市' + '</option>');
+                    $('#citybox2').append('<option id="2306208">' + '蘇澳' + '</option>');
+                    $('#citybox2').append('<option id="2306243">' + '南澳' + '</option>');
+
+                    updateAllDetail(2306198);
+                }
+                else if(region == 15){
+                    $('#citybox2').append('<option id="2306187">' + '花蓮市' + '</option>');
+                    updateAllDetail(2306187);
+                }
+                else if(region == 16){
+                    $('#citybox2').append('<option id="2306190">' + '台東市' + '</option>');
+                    $('#citybox2').append('<option id="2306227">' + '關山' + '</option>');
+                    updateAllDetail(2306190);
+                }
+                else if(region == 17){
+                    $('#citybox2').append('<option id="2306204">' + '南投市' + '</option>');
+                    updateAllDetail(2306204);
+                }
+
+                refreshJSON();
+            });
+
+            $('#citybox2').change(function(){
+                var cityID = $(this).find(':selected').attr('id');
+                updateAllDetail (cityID);
+                refreshJSON();
+                console.log(cityID);
+            });
+    	</script>
+    </body>
+</html> 
