@@ -1,0 +1,328 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>hello</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+ 
+    <script src="js/jquery-1.9.1.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+
+    <script type="text/javascript"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+    </script>
+
+    <style>
+      .navbar{
+ 		background-color: white; /* background color will be black for all browsers */
+  		background-image: none;
+		background-repeat: no-repeat;
+		margin-bottom: 0px;
+		border-width: 0px;
+	  }
+	  .navbar-inner{
+	  	background-color: white; /* background color will be black for all browsers */
+  		background-image: none;
+		background-repeat: no-repeat;
+		border-width: 0px;
+	  }
+      .nav_library:hover img{
+      	content: url("首頁元件/NavBarButton/NavBotton_flora_2.png");
+      }
+      .nav_lanscape:hover img{
+      	content: url("首頁元件/NavBarButton/NavBotton_location_2.png");
+      }
+      .empty_button{
+      	width: 200px
+      }
+      .nav_login img{
+      	padding-top: 40px;
+      	width: 200px;
+      }
+      .nav_login:hover img{
+      	content: url("首頁元件/NavBarLogin/NavLogin_2.png");
+      }
+      .webbody {
+      	background: url("首頁元件/Background/Background.png");
+ /* 60px to make the container go all the way to the bottom of the topbar */
+ 		border-top-width: 0px;
+ 		border-top-color: orange;
+ 		border-top-style: solid;
+        border-bottom-width: 10px;
+        border-bottom-style: solid;
+        border-bottom-color: orange;
+      }
+      .flower_wall{
+      	padding-top: 20px;
+        padding-left: 20px;
+      }
+      .flower_block{
+      	border-top-width: 10px;
+      	border-top-color: transparent;
+      	border-top-style: solid;
+      
+		height: 250px;
+		overflow: hidden;
+		position: relative;
+		margin-left: 10px;
+
+      }
+      .flower_block img{
+      	position: absolute;
+		border: 0;
+		z-index: 0;
+      }
+      .flower_block .caption{
+      	position: absolute;
+		top: 250px;	/* .abgne_tip_gallery_block 的高 - 想顯示 title 的高(這邊是設 55) */
+		width: 323px;	/* .abgne_tip_gallery_block 的寬 - .caption 的左右 padding */
+		height: 50px;
+		padding: 0px 20px 5px 20px;
+		cursor: pointer;
+		color: #fff;
+		background-color: black;
+		opacity: 0.7;
+		z-index: 1;
+		white-space: nowrap;
+		display: inline;
+      }
+      .caption_title{
+      	font-size: 25px;
+ 		white-space: nowrap;
+      }
+      #steps{ 	
+        border-top-width: 40px;
+      	border-top-color: transparent;
+      	border-top-style: solid;
+      	border-left-width: 0px;
+      	height: 600px;
+      	position: relative;
+      	
+      }
+      #steps .step_pic{
+      	height: 415px;
+      	width: 690px;
+      	padding: 18px 0px 0px 35px;
+      }
+      #steps .step_three{
+      	position: absolute;
+      	top: 434px;
+      	left: 555px;
+      	z-index: 0;
+      } 
+      #steps .step_two{
+      	position: absolute;
+      	top: 432px;
+      	left: 280px;
+      	z-index: 1;
+      } 
+      #steps .step_one{
+      	position: absolute;
+      	padding: 0px 0px 0px 10px;
+      	top: 432px;
+      	left: 0px;
+      	z-index: 2;
+      }
+      #aboutFlora{
+        border-width: 15px 0px 15px 0px;
+      	border-color: transparent;
+      	border-style: solid;
+      
+      	height: 600px;
+      
+      }
+      #fbApi{
+      	border-top-width: 40px;
+      	border-top-color: transparent;
+      	border-top-style: solid;
+      	
+      	height: 1000px;
+      	padding: 15px 0px 0px 15px;
+      }
+    </style>
+    <script type="text/javascript">
+
+	$(function(){
+		// 預設標題區塊 .abgne_tip_gallery_block .caption 的 top
+		var _titleHeight = 0;
+		$('.flower_block').each(function(){
+			// 先取得區塊的高及標題區塊等資料
+			var $this = $(this), 
+				_height = $this.height(), 
+				$caption = $('.caption', $this),
+				_captionHeight = $caption.outerHeight(true),
+				_speed = 200;
+			
+			// 當滑鼠移動到區塊上時
+			$this.hover(function(){
+				// 讓 $caption 往上移動
+				$caption.stop().animate({
+					top: _height - _captionHeight
+				}, _speed);
+			}, function(){
+				// 讓 $caption 移回原位
+				$caption.stop().animate({
+					top: _height - _titleHeight
+				}, _speed);
+			});
+		});
+	});
+
+	</script>
+</head>
+<body>
+	<div class="navbar container"> <!--"navbar-fixed-top"-->
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><img src="首頁元件/NavBarIcon/NavBarIcon.png" title="" alt=""></a>
+
+          <div class="nav-collapse collapse">
+            <!--p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">Username<img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt=""></a>
+            </p-->
+
+            <ul class="nav">
+              <li>
+              	<a href="#library" class="nav_library">
+              		<img src="首頁元件/NavBarButton/NavBotton_flora.png" title="" alt=""></a>
+              </li>
+              <li>
+              	<a href="#lanscape" class="nav_lanscape">
+              		<img src="首頁元件/NavBarButton/NavBotton_location.png" title="" alt=""></a>
+              </li>
+              <li class="empty_button"></li>
+            </ul>
+            <div>
+              <a href="#lanscape" class="nav_login">
+              	<img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt=""></a>
+            <div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+	<div class="container webbody">
+		<div class="flower_wall">
+		<div class="row">
+			<div class="span4 flower_block">
+				
+				<a href="#"><img src="首頁元件/Flowerwallpic/flowerpic.png" title="" alt=""></a> 
+				
+				<div class="caption">
+					<img src="首頁元件/Like_Pics_ICON/picIcon.png">
+					<div title="紫野菊" style="font-size:20px; margin-top: 15px; padding-left: 60px; display: inline-block;">紫野菊</div>
+					<div style="display: inline; padding-top: 20px;">by Andrew</div>
+					<img src="首頁元件/Like_Pics_ICON/likeIcon.png" style="padding-left:10px;">
+					<div style="display: inline; padding-top: 20px; padding-left: 70px; font-size:20px;">5893</div>
+				</div>
+			
+			</div>
+			<div class="span4 flower_block">
+				<a href="#"><img src="首頁元件/Flowerwallpic/flowerpic2.png" title="" alt=""></a> 
+				<div class="caption">
+					<img src="首頁元件/Like_Pics_ICON/picIcon.png">
+					<div title="" style="font-size:20px; margin-top: 15px; padding-left: 60px; display: inline-block;">仙人掌</div>
+					<div style="display: inline; padding-top: 20px;">by Dolphin</div>
+					<img src="首頁元件/Like_Pics_ICON/likeIcon.png" style="padding-left:10px;">
+					<div style="display: inline; padding-top: 20px; padding-left: 70px; font-size:20px;">2334</div>
+				</div>
+			</div>
+			<div class="span4 flower_block">
+				<a href="#"><img src="首頁元件/Flowerwallpic/flowerpic3.png" title="" alt=""></a>
+				<div class="caption">
+					<img src="首頁元件/Like_Pics_ICON/picIcon.png">
+					<div title="" style="font-size:20px; margin-top: 15px; padding-left: 60px; display: inline-block;">玫瑰</div>
+					<div style="display: inline; padding-top: 20px;">by Emma</div>
+					<img src="首頁元件/Like_Pics_ICON/likeIcon.png" style="padding-left:10px;">
+					<div style="display: inline; padding-top: 20px; padding-left: 70px; font-size:20px;">893</div>
+				</div> 				
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="span4 flower_block">
+				<a href="#"><img src="首頁元件/Flowerwallpic/flowerpic4.png" title="" alt=""></a>
+				<div class="caption">
+					<img src="首頁元件/Like_Pics_ICON/picIcon.png">
+					<div title="" style="font-size:20px; margin-top: 15px; padding-left: 60px; display: inline-block;">甘菊花</div>
+					<div style="display: inline; padding-top: 20px;">by Andrew</div>
+					<img src="首頁元件/Like_Pics_ICON/likeIcon.png" style="padding-left:10px;">
+					<div style="display: inline; padding-top: 20px; padding-left: 70px; font-size:20px;">853</div>
+				</div> 
+			</div>
+			<div class="span4 flower_block">
+				<a href="#"><img src="首頁元件/Flowerwallpic/flowerpic5.png" title="" alt=""></a>
+				<div class="caption">
+					<img src="首頁元件/Like_Pics_ICON/picIcon.png">
+					<div title="" style="font-size:20px; margin-top: 15px; padding-left: 60px; display: inline-block;">荷花</div>
+					<div style="display: inline; padding-top: 20px;">by Amy</div>
+					<img src="首頁元件/Like_Pics_ICON/likeIcon.png" style="padding-left:10px;">
+					<div style="display: inline; padding-top: 20px; padding-left: 70px; font-size:20px;">543</div>
+				</div> 
+			</div>
+			<div class="span4 flower_block">
+				<a href="#"><img src="首頁元件/Flowerwallpic/flowerpic6.png" title="" alt=""></a> 
+				<div class="caption">
+					<img src="首頁元件/Like_Pics_ICON/picIcon.png">
+					<div title="" style="font-size:20px; margin-top: 15px; padding-left: 60px; display: inline-block;">金鳳花</div>
+					<div style="display: inline; padding-top: 20px;">by Dolphin</div>
+					<img src="首頁元件/Like_Pics_ICON/likeIcon.png" style="padding-left:10px;">
+					<div style="display: inline; padding-top: 20px; padding-left: 70px; font-size:20px;">283</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="row">
+			<div class="span8">
+				<div id="steps">
+					<img src="首頁元件/流程圖/AppInstrction_1.png" title="" alt="" class="step_pic">
+					<a href="javascript: void(0)"><img src="首頁元件/流程圖Button/InsButton1.png" title="" alt="" class="step_one"></a>
+					<a href="javascript: void(0)"><img src="首頁元件/流程圖Button/InsButton3.png" title="" alt="" class="step_two"></a>
+					<a href="javascript: void(0)"><img src="首頁元件/流程圖Button/InsButton5.png" title="" alt="" class="step_three"></a>
+					
+				</div>
+				<div id="aboutFlora">aboutFlora</div>
+			</div>
+			<div class="span3" id="fbApi">fbApi</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+    	$(".step_one").hover(
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton2.png");
+               $(".step_pic").attr("src","首頁元件/流程圖/AppInstrction_1.png");
+            },
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton1.png");
+            }
+        );
+        $(".step_two").hover(
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton4.png");
+               $(".step_pic").attr("src","首頁元件/流程圖/AppInstrction_2.png");
+            },
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton3.png");
+            }
+        );
+        $(".step_three").hover(
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton6.png");
+               $(".step_pic").attr("src","首頁元件/流程圖/AppInstrction_3.png");
+            },
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton5.png");
+            }
+        );
+   
+	</script>
+</body>
+</html>
