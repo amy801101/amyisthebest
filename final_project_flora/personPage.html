@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>個人資訊</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+ 
+    <script src="js/jquery-1.9.1.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+
+    <script type="text/javascript"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+    </script>
+    <style type="text/css">
+      .navbar{
+ 		background-color: white; /* background color will be black for all browsers */
+  		background-image: none;
+		background-repeat: no-repeat;
+		margin-bottom: 0px;
+		border-width: 0px;
+	  }
+	  .navbar-inner{
+	  	background-color: white; /* background color will be black for all browsers */
+  		background-image: none;
+		background-repeat: no-repeat;
+		border-width: 0px;
+	  }
+      .nav_library:hover img{
+      	content: url("首頁元件/NavBarButton/NavBotton_flora_2.png");
+      }
+      .nav_lanscape:hover img{
+      	content: url("首頁元件/NavBarButton/NavBotton_location_2.png");
+      }
+      .empty_button{
+      	width: 200px
+      }
+      .nav_login img{
+      	padding-top: 40px;
+      	width: 200px;
+      }
+      .nav_login:hover img{
+      	content: url("首頁元件/NavBarLogin/NavLogin_2.png");
+      }
+      .webbody {
+      	background: url("個人會員/backgroundImg.jpg") no-repeat;
+ 
+ 		border-top-width: 0px;
+ 		border-top-color: orange;
+ 		border-top-style: solid;
+        border-bottom-width: 0px;
+        border-bottom-style: solid;
+        border-bottom-color: orange;
+      	height: 1000px;
+      }
+      .personInfo{
+      	padding-left: 450px;
+      	padding-top: 20px;
+      }
+    .caption{
+      	position: absolute;
+		top: 120px;	/* .abgne_tip_gallery_block 的高 - 想顯示 title 的高(這邊是設 55) */
+		left: 13px;
+		width: 110px;	/* .abgne_tip_gallery_block 的寬 - .caption 的左右 padding */
+		height: 30px;
+		padding: 0px 10px 5px 20px;
+		cursor: pointer;
+		color: #fff;
+		background-color: black;
+		opacity: 0.7;
+		z-index: 1;
+		white-space: nowrap;
+		display: inline;
+      }
+      .flower_block{
+      	position: relative;
+      }
+
+    </style>
+ </head>
+ <body>
+ 	<div class="navbar container"> <!--"navbar-fixed-top"-->
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="nav-collapse collapse" style="display: inline-block;">
+
+            <ul class="nav" >
+              <li>
+              	<a href="flora_index.html"><img src="首頁元件/NavBarIcon/NavBarIcon.png"></a>
+              </li>
+              <li>
+              	<a href="#library" class="nav_library" >
+              		<img src="首頁元件/NavBarButton/NavBotton_flora.png" title="" alt=""></a>
+              </li>
+              <li>
+              	<a href="#lanscape" class="nav_lanscape">
+              		<img src="首頁元件/NavBarButton/NavBotton_location.png" title="" alt=""></a>
+              </li>
+              <li class="empty_button"></li>
+            </ul>
+            <div style="display: inline-block;">
+              <a href="personPage.html" class="nav_login">
+              	<img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt=""></a>
+            <div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="webbody">
+    	<div class="personInfo">
+    		<h3>Andrew Ku</h3>
+    		<p>Hi, I am Andrew! I love to collect flowers and red flower is my favorite.<br>
+    		   If you also like to take photos of flowers, please let me know.<br>
+    		   We can share our photoshoots together and have lots of fun! 
+    		</p>
+    	</div>
+    	<!--div style="float: right; padding-top: 100px;"><img src="個人會員/myFavorite.png"></div-->
+    	<div style="float: right; padding-top: 110px; padding-right:90px; display: inline">
+    		<img src="個人會員/likeIcon.png" style="display: inline;">
+    		<p style="display: inline; font-size: 20px;">我的最愛</p>
+    	</div>
+    	<div style="padding-left: 60px; padding-top: 175px;" class="container">
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/1.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">聖誕紅</div>
+				</div>
+    		</div>
+      		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/3.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">火鶴</div>
+				</div>
+    		</div>
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/5.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">鳳仙花</div>
+				</div>
+    		</div>
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/7.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">四季秋海棠</div>
+				</div>
+    		</div>
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/9.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">山櫻花</div>
+				</div>
+    		</div>
+
+    	</div>
+    	    <div style="padding-left: 60px; padding-top: 50px;" class="container">
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/2.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">輪傘莎草</div>
+				</div>
+    		</div>
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/4.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">海芋</div>
+				</div>
+    		</div>
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/6.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">矮仙丹花</div>
+				</div>
+    		</div>
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/8.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">杜鵑花</div>
+				</div>
+    		</div>
+    		<div class="span2 flower_block">
+    			<img src="個人會員/flowerinstagram/10.png">
+    			<div class="caption">
+					<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">天堂鳥</div>
+				</div>
+    		</div>
+    	</div>
+    </div>
+
+
+    <script type="text/javascript">
+    	$(".step_one").hover(
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton2.png");
+               $(".step_pic").attr("src","首頁元件/流程圖/AppInstrction_1.png");
+            },
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton1.png");
+            }
+        );
+        $(".step_two").hover(
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton4.png");
+               $(".step_pic").attr("src","首頁元件/流程圖/AppInstrction_2.png");
+            },
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton3.png");
+            }
+        );
+        $(".step_three").hover(
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton6.png");
+               $(".step_pic").attr("src","首頁元件/流程圖/AppInstrction_3.png");
+            },
+            function() {
+               $(this).attr("src","首頁元件/流程圖Button/InsButton5.png");
+            }
+        );
+	</script>
+ </body>
+ </html>

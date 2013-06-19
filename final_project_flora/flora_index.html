@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>hello</title>
+	<title>花名錄</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -49,7 +49,7 @@
  		border-top-width: 0px;
  		border-top-color: orange;
  		border-top-style: solid;
-        border-bottom-width: 10px;
+        border-bottom-width: 0px;
         border-bottom-style: solid;
         border-bottom-color: orange;
       }
@@ -128,9 +128,11 @@
         border-width: 15px 0px 15px 0px;
       	border-color: transparent;
       	border-style: solid;
-      
+      	padding-top: 15px;
+      	padding-left: 90px;
+      	padding-right: 90px;
       	height: 600px;
-      
+
       }
       #fbApi{
       	border-top-width: 40px;
@@ -138,7 +140,7 @@
       	border-top-style: solid;
       	
       	height: 1000px;
-      	padding: 15px 0px 0px 15px;
+      	padding: 70px 0px 0px 0px;
       }
     </style>
     <script type="text/javascript">
@@ -175,21 +177,14 @@
 	<div class="navbar container"> <!--"navbar-fixed-top"-->
       <div class="navbar-inner">
         <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#"><img src="首頁元件/NavBarIcon/NavBarIcon.png" title="" alt=""></a>
+          <div class="nav-collapse collapse" style="display: inline-block;">
 
-          <div class="nav-collapse collapse">
-            <!--p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Username<img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt=""></a>
-            </p-->
-
-            <ul class="nav">
+            <ul class="nav" >
               <li>
-              	<a href="#library" class="nav_library">
+              	<a href="flora_index.html"><img src="首頁元件/NavBarIcon/NavBarIcon.png"></a>
+              </li>
+              <li>
+              	<a href="#library" class="nav_library" >
               		<img src="首頁元件/NavBarButton/NavBotton_flora.png" title="" alt=""></a>
               </li>
               <li>
@@ -198,8 +193,8 @@
               </li>
               <li class="empty_button"></li>
             </ul>
-            <div>
-              <a href="#lanscape" class="nav_login">
+            <div style="display: inline-block;">
+              <a href="personPage.html" class="nav_login">
               	<img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt=""></a>
             <div>
           </div><!--/.nav-collapse -->
@@ -288,9 +283,38 @@
 					<a href="javascript: void(0)"><img src="首頁元件/流程圖Button/InsButton5.png" title="" alt="" class="step_three"></a>
 					
 				</div>
-				<div id="aboutFlora">aboutFlora</div>
+				<div id="aboutFlora">
+					
+					<h3>關於花名錄app</h3>
+					<div style="font-size: 18px;">
+						「花名錄app」是一款即時辨識花卉，隨時隨地學習生態知識的軟體。由台灣大哥大基金會贊助台大與政大資工團隊開發，結合荒野保護協會，共同建立台灣賞花旅遊電子資料庫，期盼使用者經由賞花導覽可以隨時回報、上傳與分享，豐富台灣花卉生態的圖書館。 <br><br>
+					</div>
+					
+					<h4>工作團隊</h4>
+					<div>
+						台灣大學 許富傑、台灣大學 黃正宇、
+						政治大學 林震軒、政治大學 劉康平、<br>
+						政治大學 蔡宜璇、台灣大學 陳雍協、
+						台灣大學 郭彥伶<br>
+
+						<h4>指導老師</h4>
+
+						台灣大學 徐宏民 教授、  
+						政治大學 余能豪 教授、  
+						台灣大學 陳彥仰 教授<br>
+
+						<h4>指導單位</h4>
+
+						台灣大學、政治大學、台灣大哥大<br>
+						應用軟體開發及所有權: 台灣大學與政治大學<br> 
+						資料庫所有權: 荒野保護協會<br>
+					</div>
+				</div>
 			</div>
-			<div class="span3" id="fbApi">fbApi</div>
+			<div class="span3" id="fbApi">
+				<img src="首頁元件/fbLogin/flowerbookIcon.png" style="padding-left: 70px;">
+				<a href="https://itunes.apple.com/tw/app/hua-ming-lu/id616030855?mt=8" target="_blank"><img src="首頁元件/appStoreIcon.png" style="padding-top: 670px; padding-left: 10px;"></a>
+			</div>
 		</div>
 	</div>
 	
