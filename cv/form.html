@@ -1,0 +1,191 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Amy Lee</title> 
+	<style type="text/css">
+		@import url(http://fonts.googleapis.com/css?family=Inder); 
+		@import url(http://fonts.googleapis.com/css?family=Ribeye);
+		@import url(http://fonts.googleapis.com/css?family=Purple+Purse);
+
+		@import url(http://cs.nccu.edu.tw/~jonesyu/960gs/code/css/reset.css);
+		@import url(http://cs.nccu.edu.tw/~jonesyu/960gs/code/css/960.css);
+		@import url(http://cs.nccu.edu.tw/~jonesyu/960gs/code/css/text.css);
+
+		body{
+			/*background: url(http://subtlepatterns.com/patterns/honey_im_subtle.png);*/
+			background: url(http://amy801101.github.com/amyisthebest/bedge_grunge.png);
+			font-family: 'Inder', sans-serif;
+		}
+		header{
+			/*background: url(http://subtlepatterns.com/patterns/linedpaper.png);*/
+			margin: 50px;
+		
+		}
+
+		header h1{
+			height: 150px;
+			font-family: 'Ribeye', cursive;
+			font-weight: bolder;
+			font-size: 38px;
+			color: #663300;
+			text-shadow: 1px 1px #3F372B;
+			position: absolute; left: 250px; top: 100px;
+		}
+		header h2{
+			font-size: 20px;
+			position: absolute; left: 250px; top: 150px;
+		}
+		.crop{
+			width:900px;
+			height:150px;
+			overflow:hidden;
+
+		}
+		.crop img{
+			position:relative;
+			top: -150px;
+			left: 0px;
+		}
+		.headphoto{
+			max-width: 300px;
+			width: 300px;
+			height: 50px;
+			position: absolute; left: 400px; top: 150px;
+		}
+		#subheader{
+			border: none;
+			text-align: right;
+			position: relative; left: 650px; top: 0px;
+		}
+		#subheader #pages_label{
+			background: url(http://amy801101.github.com/amyisthebest/mochaGrunge.png);
+			width: 130px;
+			height: 30px;
+			text-align: center;
+			font-family: 'Purple Purse', cursive;
+			font-size: 18px;
+			color: white;
+			text-shadow: 1px 1px #3F372B;
+			border-right: solid 2px black;
+			border-bottom: solid 1px black;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+		#subheader #pages_label a{
+			text-decoration: none;
+			color: white;
+		}
+		#subheader #pages_label a:hover{
+			text-decoration: none;
+			color: #FFFF99;
+		}
+		#subheader #pages_label a:visited{
+			text-decoration: none;
+		}
+		#page{
+			background: url(http://amy801101.github.com/amyisthebest/linedpaper.png);
+			border: none;
+			margin-top: 30px;
+			font-size: 16px;
+			font-family: 'Inder', sans-serif;
+			padding-top: 30px;
+			padding-left: 30px;
+		}
+		#page legend{
+			font-family: 'Purple Purse', cursive;
+			font-size: 18px;	
+			line-height: 16px;
+		}
+
+		#page #form_content{
+			float: left;
+		}
+		#page input[type=submit]{
+			position: relative; left: 260px; top: 0px;
+			font-size: 18px;
+			background: #999999;
+			border: 1px solid #999999;
+			border-right: solid 2px black;
+			border-bottom: solid 1px black;
+		}
+		#page input[name^=entry], select[name^=entry], textarea[name^=entry], option{
+			color: #663300;
+			font-size: 16px;
+			font-family: 'Inder', sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+<section class="container_12">
+	<header>
+		<div class="grid_12">
+			<div class="crop">
+				<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/526396_558195000880002_668700842_n.jpg">
+					<!--img src="http://subtlepatterns.com/patterns/paper.png"-->
+			</div>
+			<div>
+				<h1>Amy Lee</h1><br>
+				<h2>Cel: 0958-xxx-xxx<br>
+				   Email: 99703004@nccu.edu.tw</h2>
+			</div>
+		</div>
+	</header>
+	<div id="subheader" class="grid_12">
+		<div id="pages_label" class="grid_10"><a href="http://amy801101.github.com/amyisthebest/hw2_cv.html">Personal CV</a></div>
+		<div id="pages_label" class="grid_2"><a href="#page">Contact Me</a></div>
+	</div>
+	<div class="grid_12" id="page">
+		<form class="grid_12" action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&ifq" method="POST">
+			<fieldset class="grid_6 alpha">
+				<legend>Hidden_id</legend>
+				<input type="hidden" name="entry.0.single" value="99703004" ></input>
+			</fieldset>
+
+			<fieldset class="grid_6 omega">
+				<legend>Relationship</legend>
+				<select name="entry.3.group">
+					<option>Single
+					<option>Dating
+					<option>Married
+					<option>Hard to explain
+				</select><br>
+				<br>
+			</fieldset>
+
+			<fieldset class="grid_6 alpha">
+				<legend>Gender</legend>
+				<input type="radio" name="entry.1.group" value="Boy"> Boy</input><br>
+				<input type="radio" name="entry.1.group" value="Girl"> Girl</input><br><br>
+			</fieldset>
+
+			<fieldset class="grid_6 omega">
+				<legend>Email</legend>
+				<input type="text" name="entry.4.single" req="true"></input><br><br>
+				<br>
+			</fieldset>
+		
+			<fieldset class="grid_6 alpha">
+				<legend>Favorite Food</legend>
+				<input type="checkbox" name="entry.2.group" value="Apple"> Apple</input><br>
+				<input type="checkbox" name="entry.2.group" value="Banana"> Banana</input><br>
+				<input type="checkbox" name="entry.2.group" value="Lemon"> Lemon</input><br>
+				<input type="checkbox" name="entry.2.group" value="Watermelon"> Watermelon</input><br>
+				<br>
+			</fieldset>
+
+			<fieldset class="grid_6 omega">
+				<legend>Comments</legend>
+				<textarea name="entry.5.single" rows="5" cols="30"></textarea><br>
+			</fieldset>
+
+			<fieldset class="grif_12">
+				<input type="submit" name="submit" value="submit">
+			</fieldset>
+		</form>
+	</div>
+</section>
+</body>
+</html>
