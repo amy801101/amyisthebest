@@ -40,16 +40,6 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<code class="hljs markdown"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">data-markdown</span>&gt;</span></span>
-					  ## Markdown support
-
-					  Write content using inline or external Markdown.
-					  Instructions and more info available in the [<span class="hljs-link_label">readme</span>](<span class="hljs-link_url">https://github.com/hakimel/reveal.js#markdown</span>).
-					<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span></span>
-					</code>
-				</section>
-				
 				<section data-markdown 
 						data-separator="^\n\n\n" 
 						data-separator-vertical="^\n\n">
@@ -277,6 +267,10 @@ class Logger
 			});
 
 			$(function(){
+				$('pre code').each(function(i, block) {
+    				hljs.highlightBlock(block);
+  				});
+
 				$('code').addClass('hljs markdown');
 				console.log('code add hljs mardown');
 			});
