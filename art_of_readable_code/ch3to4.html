@@ -50,7 +50,7 @@
 
 ## 容易誤解的名稱
 ### Filter()
-```php
+```
 result = Database.all_objects.filter("year <= 2015")
 ```
 
@@ -73,7 +73,7 @@ result = Database.all_objects.filter("year <= 2015")
 
 
 ## 包含邊界值的“極值”優先使用
-```php
+```
 CART_TOO_BIG_LIMIT = 10;
 if(shopping.cart.num_items >= CART_TOO_BIG_LIMIT) {
 	Error("Too many itms in cart");
@@ -117,7 +117,7 @@ if(shopping.cart.num_items >= CART_TOO_BIG_LIMIT) {
 * getMean() -> computeMean()
 
 
-```php
+```
 ShrinkList(list<Node>& list, int max_size) {
 	while(list.size() > max_size) {
 		FreeNode(list.back());
@@ -162,10 +162,10 @@ ShrinkList(list<Node>& list, int max_size) {
 
 
 ## 用方法(method)消除混亂
-```php
+```
 assert(B>ExpandFullName(database_connection, "Doug Adams", &error) == "Mr. Douglas Adams")
 ```
-```php
+```
 CheckFullName("Doug Adams", "Mr. Douglas Adams", "")
 ```
 * 精簡程式碼
@@ -175,7 +175,7 @@ CheckFullName("Doug Adams", "Mr. Douglas Adams", "")
 
 
 ## 適當使用列對齊
-```php
+```
 CheckFullName("Doug Adams", "Mr. Douglas Adams", "")
 CheckFullName("    Doug Adams    ", " Mr. Douglas Adams ", "")
 CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
@@ -196,7 +196,7 @@ CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
 
 
 ## 將宣告的部分組織為多個區塊
-```php
+```
 //Handlers
 ...
 //Request/Reply Utilities
@@ -208,7 +208,7 @@ CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
 
 
 ## 區分程式碼“段落”
-```php
+```
 //Get users' friends' email
 ...
 //Import all emails
@@ -220,12 +220,12 @@ CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
 
 
 ## 個人風格與一致性
-```php
+```
 class Logger {
 	
 }
 ```
-```php
+```
 class Logger 
 {
 	
@@ -266,18 +266,12 @@ class Logger
 			});
 
 			$(function(){
-				// $('pre code').each(function(i, block) {
-    // 				hljs.highlightBlock(block);
-  		// 		});
-
+				//this is not working
 				$('code').addClass('hljs markdown');
 				console.log('code add hljs mardown1');
 			});
 
 			$(window).load(function(){
-				// $('pre code').each(function(i, block) {
-    // 				hljs.highlightBlock(block);
-  		// 		});
 
 				$('code').addClass('hljs markdown');
 				console.log('code add hljs mardown2');
