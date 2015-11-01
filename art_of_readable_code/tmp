@@ -1,71 +1,57 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+        <title>Agile Development Introduction</title>
 
-		<meta name="description" content="">
-		<meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="Scrum 333 Introduction">
+        <meta name="author" content="Dino Lai">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <body>
 
-	<body>
+        <div class="reveal">
 
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-
-				<section data-markdown 
-						data-separator="^\n\n\n" 
-						data-separator-vertical="^\n\n">
-					<script type="text/template">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <!-- Use External -->
+                <section data-markdown data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+                    <script type="text/template">
 # CH3 不被誤解的名稱
-
-
-
 ## 容易誤解的名稱
 ### Filter()
-```php
+```
 result = Database.all_objects.filter("year <= 2015")
 ```
 
 
 ### Clip(text, length)
 * function的意思是？
-	1. 從結尾刪除length的長度
-	2. 只留下length的長度，切除尾端 
-	-> Truncate(text, length)  
+1. 從結尾刪除length的長度
+2. 只留下length的長度，切除尾端 
+FIX:  Truncate(text, length)  
 
 
 ### Clip(text, length)
 * length不明確
-->  可以改成 max_length
+FIX:  可以改成 max_length
 	* 但max_length似乎還有多種意思？
 		1. 位元組數 -> max_byte
 		2. 字元數 -> max_char
@@ -74,7 +60,7 @@ result = Database.all_objects.filter("year <= 2015")
 
 
 ## 包含邊界值的“極值”優先使用
-```php
+```
 CART_TOO_BIG_LIMIT = 10;
 if(shopping.cart.num_items >= CART_TOO_BIG_LIMIT) {
 	Error("Too many itms in cart");
@@ -83,9 +69,9 @@ if(shopping.cart.num_items >= CART_TOO_BIG_LIMIT) {
 
 
 * 邊界錯誤(off-by-one bug)
-->  把 >= 改成 >
+FIX:  把 >= 改成 >
 * CART_TOO_BIG_LIMIT 此變數無法清楚知道是否有包含邊界值(此為10)
-->  MAX_ITEM_IN_CART 或 MIN_ITEM_IN_CART
+FIX:  MAX_ITEM_IN_CART 或 MIN_ITEM_IN_CART
 
 
 
@@ -118,7 +104,7 @@ if(shopping.cart.num_items >= CART_TOO_BIG_LIMIT) {
 * getMean() -> computeMean()
 
 
-```php
+```
 ShrinkList(list<Node>& list, int max_size) {
 	while(list.size() > max_size) {
 		FreeNode(list.back());
@@ -141,9 +127,6 @@ ShrinkList(list<Node>& list, int max_size) {
 
 
 # CH4 美學
-
-
-
 ## 賞心悅目、易讀的程式碼
 	* 排版一致,讓讀者習慣一致的模式
 	* 調整類似程式碼有相同的外觀
@@ -163,10 +146,10 @@ ShrinkList(list<Node>& list, int max_size) {
 
 
 ## 用方法(method)消除混亂
-```php
+```
 assert(B>ExpandFullName(database_connection, "Doug Adams", &error) == "Mr. Douglas Adams")
 ```
-```php
+```
 CheckFullName("Doug Adams", "Mr. Douglas Adams", "")
 ```
 * 精簡程式碼
@@ -176,7 +159,7 @@ CheckFullName("Doug Adams", "Mr. Douglas Adams", "")
 
 
 ## 適當使用列對齊
-```php
+```
 CheckFullName("Doug Adams", "Mr. Douglas Adams", "")
 CheckFullName("    Doug Adams    ", " Mr. Douglas Adams ", "")
 CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
@@ -197,7 +180,7 @@ CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
 
 
 ## 將宣告的部分組織為多個區塊
-```php
+```
 //Handlers
 ...
 //Request/Reply Utilities
@@ -209,7 +192,7 @@ CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
 
 
 ## 區分程式碼“段落”
-```php
+```
 //Get users' friends' email
 ...
 //Import all emails
@@ -221,51 +204,47 @@ CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
 
 
 ## 個人風格與一致性
-```php
+```
 class Logger {
 	
 }
 ```
-```php
+```
 class Logger 
 {
 	
 }
 ```
-					</script>
-				</section>
+                    </script>
+                </section>
+            </div>
 
-			</div>
+        </div>
 
-		</div>
+        <script src="reveal.js/lib/js/head.min.js"></script>
+        <script src="reveal.js/js/reveal.js"></script>
 
-		<script src="reveal.js/lib/js/head.min.js"></script>
-		<script src="reveal.js/js/reveal.js"></script>
+        <script>
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                slideNumber: true,
+                history: true,
+                center: true,
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+        </script>
 
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-					{ src: 'reveal.js/plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
+    </body>
 </html>
