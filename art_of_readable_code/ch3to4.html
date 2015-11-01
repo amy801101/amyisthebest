@@ -49,6 +49,8 @@
 
 
 ## 容易誤解的名稱
+
+
 ### Filter()
 ```
 result = Database.all_objects.filter("year <= 2015")
@@ -58,17 +60,17 @@ result = Database.all_objects.filter("year <= 2015")
 ### Clip(text, length)
 * function的意思是？
 	1. 從結尾刪除length的長度
-	2. 只留下length的長度，切除尾端 
-	-> Truncate(text, length)  
+	2. 只留下length的長度，切除尾端
+	<br> -> Truncate(text, length)  
 
 
 ### Clip(text, length)
 * length不明確
 ->  可以改成 max_length
-	* 但max_length似乎還有多種意思？
-		1. 位元組數 -> max_byte
-		2. 字元數 -> max_char
-		3. 單字數 -> max_word
+* 但max_length似乎還有多種意思？
+	1. 位元組數 -> max_byte
+	2. 字元數 -> max_char
+	3. 單字數 -> max_word
 
 
 
@@ -82,32 +84,35 @@ if(shopping.cart.num_items >= CART_TOO_BIG_LIMIT) {
 
 
 * 邊界錯誤(off-by-one bug)
-->  把 >= 改成 >
+<br> -> 把 '>=' 改成 '>'
 * CART_TOO_BIG_LIMIT 此變數無法清楚知道是否有包含邊界值(此為10)
-->  MAX_ITEM_IN_CART 或 MIN_ITEM_IN_CART
+<br> -> MAX_ITEM_IN_CART 或 MIN_ITEM_IN_CART
 
 
 
 ## 封閉區間先使用first與last
-* "直到" & "直到包含邊界"? ex.int_range(first=2,last=4)
--> int_range(first=2,last=4)
+* "直到" & "直到包含邊界"? 
+<br>ex.int_range(first=2,last=4)
+<br> -> int_range(first=2,last=4)
 
 
 
 ## 半開放區間優先使用begin與end
 * 列出10/16的所有事件
-	* printEventInRange('2015-10-16 00:00:00', '2015-10-17 12:00:00')
-	* printEventInRange('2015-10-16 00:00:00', '2015-10-16 11:59:59')
+```
+printEventInRange('2015-10-16 00:00:00', '2015-10-17 12:00:00')
+printEventInRange('2015-10-16 00:00:00', '2015-10-16 11:59:59')
+```
 -> printEventInRange(begin='2015-10-16 00:00:00', end='2015-10-17 12:00:00')
 
 
 
 ## 布林值名稱
 * read_password
-	-> need_password
-	-> user_is_authenticated
+	<br> -> need_password
+	<br> -> user_is_authenticated
 * SpaceLeft()
-	-> HasSpaceLeft()
+	<br> -> HasSpaceLeft()
 * 避免使用否定敘述 ex.disable_ssl = false -> use_ssl = true
 
 
@@ -186,12 +191,12 @@ CheckFullName("Doug Adams"    ,     " Mr. Douglas Adams ", "")
 
 ## 選擇有意義的順序並堅守到底
 * 雖然順序不影響正確性，但有意義的排序會有所助益:
-1. details
-2. location
-3. phone 
-4. email
-5. url
-對應到<form>的順序
+	1. details
+	2. location
+	3. phone 
+	4. email
+	5. url
+<br>對應到<form>的順序
 
 
 
