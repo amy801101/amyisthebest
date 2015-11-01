@@ -44,7 +44,6 @@
 						data-separator="^\n\n\n" 
 						data-separator-vertical="^\n\n">
 					<script type="text/template">
-
 # CH3 不被誤解的名稱
 
 
@@ -272,8 +271,17 @@ class Logger
   				});
 
 				$('code').addClass('hljs markdown');
-				console.log('code add hljs mardown');
+				console.log('code add hljs mardown1');
 			});
+
+			$(window).load(function(){
+				$('pre code').each(function(i, block) {
+    				hljs.highlightBlock(block);
+  				});
+
+				$('code').addClass('hljs markdown');
+				console.log('code add hljs mardown2');
+			})
 		</script>
 
 	</body>
