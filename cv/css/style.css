@@ -1,0 +1,277 @@
+/* Reset CSS */
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Arvo:400,700|Inconsolata:400,700|Ubuntu+Condensed|Josefin+Slab:400,700);
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none; }
+
+/* End Reset CSS */
+/* Basic setup */
+* {
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.45;
+  color: #141414; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+.btn {
+  display: inline-block;
+  margin: 1rem 0;
+  color: white;
+  font-weight: 500;
+  font-size: 1.75rem;
+  background: #007ece;
+  letter-spacing: .02em;
+  border: none;
+  border-radius: 5px;
+  padding: .8rem 1rem .9rem;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 43.75em) {
+    .btn {
+      padding: .5rem .7rem .6rem;
+      font-size: 1rem; } }
+  .btn:hover {
+    background: #008ee8;
+    color: #fff; }
+  .btn:focus, .btn:active, .btn:focus:active {
+    background: #006eb5;
+    border-color: #006eb5;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset; }
+
+/* End of Basic setup */
+body {
+  box-sizing: border-box;
+  font-family: 'Inconsolata'; }
+
+.title {
+  font-family: 'Josefin Slab', serif;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3em;
+  color: #424242; }
+
+header {
+  color: white;
+  background: #007ece;
+  padding: 0 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-family: 'Poiret One', cursive; }
+  @media (max-width: 43.75em) {
+    header {
+      padding: 2rem 0; } }
+  header h1 {
+    font-size: 5rem;
+    margin: 0 0 1rem; }
+    @media (max-width: 43.75em) {
+      header h1 {
+        font-size: 2rem; } }
+  header h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0 0 1rem; }
+    @media (max-width: 43.75em) {
+      header h2 {
+        font-size: 1.5rem; } }
+
+.bg-image {
+  height: 500px;
+  z-index: -1;
+  background-image: linear-gradient(rgba(52, 73, 94, 0.1), rgba(52, 73, 94, 0.1)), url("../images/bg.jpg");
+  background-size: cover;
+  background-position: -25% 0%, center center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed; }
+
+.container {
+  margin: 5% auto;
+  width: 90%;
+  max-width: 900px; }
+  .container .description-area {
+    width: 100%;
+    height: 2em;
+    position: relative;
+    font-size: 2em; }
+    .container .description-area .description {
+      position: absolute;
+      top: 0px;
+      width: 30%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation-fill-mode: forwards;
+      text-align: left;
+      margin-left: 38%; }
+    .container .description-area .indicator {
+      width: 10px;
+      animation: blink 1s infinite; }
+    .container .description-area .typingAnim {
+      animation: typing 6s steps(45, end);
+      animation-fill-mode: forwards; }
+
+.avatar {
+  display: block;
+  text-align: center;
+  margin: 10px; }
+
+.avatar .round-border {
+  height: 150px;
+  width: 150px;
+  margin: 10px auto;
+  border: solid;
+  border-radius: 50%;
+  background: #FFF url(../images/avatar.jpg) repeat scroll 50% 0%;
+  background-size: 200px auto; }
+
+section {
+  background: #fff;
+  color: #1c262b;
+  padding: 3.5rem 0; }
+  @media (max-width: 43.75em) {
+    section {
+      padding: 2rem 0; } }
+  section.section--about .features ul {
+    padding: auto; }
+  section.section--about .features ul > li {
+    font-size: 2em;
+    text-align: left; }
+  section.section--about .features .major {
+    font-size: 1.75em;
+    color: #1A1AA8; }
+  section.section--primary {
+    background: #007ece;
+    color: #fff; }
+  section.section--primary--alt {
+    background: #27a4f4;
+    color: #fff; }
+  section h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 0 1rem; }
+    @media (max-width: 43.75em) {
+      section h3 {
+        font-size: 1.5rem; } }
+  section li {
+    font-size: 1.2rem;
+    font-weight: 300; }
+  section p {
+    font-size: 1.2rem;
+    font-weight: 300; }
+
+.features {
+  text-align: center;
+  padding: 2rem; }
+  .features:hover {
+    background: rgba(255, 255, 255, 0.1); }
+  @media (max-width: 43.75em) {
+    .features {
+      width: 100%;
+      margin: 0;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      .features:last-child {
+        border: none; } }
+  .features i {
+    margin: 0 0 2rem 0; }
+    @media (max-width: 43.75em) {
+      .features i {
+        font-size: 1.5rem;
+        width: 2rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        float: left; } }
+  .features p {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem; }
+    @media (max-width: 43.75em) {
+      .features p {
+        margin-left: 3rem; } }
+
+footer {
+  background: #2d2b2a;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.4); }
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    footer ul li {
+      display: inline-block; }
+      footer ul li a {
+        display: block;
+        padding: .4rem .7rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7); }
+        footer ul li a:hover {
+          color: white; }
+
+@keyframes typing {
+  0% {
+    width: 0; }
+  40% {
+    width: 40%; }
+  100% {
+    width: 0; } }
+@keyframes typing2 {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes backforward {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+@keyframes blink {
+  to {
+    opacity: .0; } }
+
+/*# sourceMappingURL=style.css.map */
