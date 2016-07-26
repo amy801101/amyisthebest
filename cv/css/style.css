@@ -148,7 +148,7 @@ body {
   color: white;
   font-size: 3em;
   margin: 0 auto;
-  padding: 1.5% 5%;
+  padding: 4% 5%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
   left: 0;
@@ -193,13 +193,16 @@ body {
         display: block;
         position: absolute;
         right: 0;
-        top: 3em;
+        top: 2.5em;
+        font-size: 1.5em;
         background-color: rgba(0, 0, 0, 0.5);
-        padding: 2% 5%;
+        padding: 2% 10%;
         text-align: center;
         opacity: 0;
         animation-fill-mode: forwards;
         display: none; }
+        .navbar .right .mobile-drop li {
+          padding: 10% 0; }
         .navbar .right .mobile-drop a {
           color: white; } }
 
@@ -211,6 +214,7 @@ body {
   height: 100%;
   z-index: 1;
   background-image: linear-gradient(rgba(52, 73, 94, 0.1), rgba(52, 73, 94, 0.1)), url("../images/bg.jpg");
+  background-image: -webkit-linear-gradient(rgba(52, 73, 94, 0.1), rgba(52, 73, 94, 0.1)), url("../images/bg.jpg");
   background-size: cover;
   background-position: -25% 0%, center center;
   background-repeat: repeat, no-repeat;
@@ -223,9 +227,6 @@ body {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-  @media (max-width: 65em) {
-    .bg-image {
-      font-size: 150%; } }
   .bg-image .container {
     display: inline-block;
     vertical-align: middle;

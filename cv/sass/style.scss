@@ -209,7 +209,7 @@ $title_area_width: 100px;
   color: white;
   font-size: 3em;
   margin: 0 auto;
-  padding: 1.5% 5%;
+  padding: 4% 5%;
   background-color: rgba(0, 0, 0, 0.5);
   // background-image: url(../images/noise.png);
   z-index: 5; 
@@ -272,13 +272,19 @@ $title_area_width: 100px;
         display: block;
         position: absolute;
         right: 0;
-        top: 3em;
+        top: 2.5em;
+        font-size: 1.5em;
         background-color: rgba(0, 0, 0, 0.5);
-        padding: 2% 5%;
+
+        padding: 2% 10%;
         text-align: center;
         opacity: 0;
         animation-fill-mode: forwards;
         display: none;
+        
+        li{
+          padding: 10% 0;
+        }
 
         a {
           color: white;
@@ -298,10 +304,11 @@ $title_area_width: 100px;
     height: 100%;
     z-index: 1;
     background-image: linear-gradient(rgba(52, 73, 94, 0.1), rgba(52, 73, 94, 0.1)), url("../images/bg.jpg"); 
+    background-image: -webkit-linear-gradient(rgba(52, 73, 94, 0.1), rgba(52, 73, 94, 0.1)), url("../images/bg.jpg"); 
     background-size: cover;
     background-position: -25% 0%, center center;
     background-repeat: repeat, no-repeat;
-    background-attachment: scroll, fixed; //linear-gradien+scroll, fixed的神奇之處...
+    background-attachment: scroll, fixed; //linear-gradient+scroll, fixed的神奇之處...
     text-align: center;
     color: white;
 
@@ -316,7 +323,9 @@ $title_area_width: 100px;
     }
 
     @media (max-width: $bp-s) {
-        font-size: 150%;
+      // background-image: url("../images/bg.jpg");
+      // background-position: center center;
+      // font-size: 150%;
     }
 
     .container{
