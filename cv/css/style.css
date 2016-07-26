@@ -237,8 +237,8 @@ body {
       background-size: cover;
       -webkit-background-size: cover;
       font-size: 150%;
-      background-attachment: fixed;
-      -webkit-background-attachment: fixed; } }
+      background-attachment: scroll;
+      -webkit-background-attachment: scroll; } }
   .bg-image .container {
     display: inline-block;
     vertical-align: middle;
