@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Amy Lee</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Ruda:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<div class="navbar">
+		<div class="left"><a href="#header">AMY  LEE</a></div>
+		<div class="right">
+			<a class="nav-btn" href="#section--timeline">
+				TIMELINE
+			</a>
+			<a class="nav-btn" href="#section--skills">
+				SKILLS
+			</a>
+			<a class="nav-btn" href="#section--portfolio">
+				PORTFOLIO
+			</a>
+			<a class="nav-btn" href="#section--about">
+				ABOUT ME
+			</a>
+			<a href="javascript:void(0)" onclick="toggle_drop(this)" class="mobile-bar">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</a>
+			<ul class="mobile-drop" onclick="toggle_drop(this)">
+				<li>
+					<a href="#section--about">ABOUT ME</a>
+				</li>
+				<li>
+					<a href="#section--portfolio">PORTFOLIO</a>
+				</li>
+				<li>
+					<a href="#section--skills">SKILLS</a>
+				</li>
+				<li>
+					<a href="#section--timeline">TIMELINE</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="bg-image" id="header">
+		<div class="container">
+			<div class="avatar">
+				<div class="round-border"></div>
+            </div>
+			<div class="name">AMY LEE</div>
+			<div class="description-area">
+				<div class="description">
+					A FRONTEND DEVELOPER. <span class="indicator">|</span>
+				</div>
+				<div class="description">
+					A WEBSITE DESIGNER. <span class="indicator">|</span>
+				</div>
+				<div class="description">
+					A TASKS CHALLENGER. <span class="indicator">|</span>
+				</div>
+			</div>
+
+    		<a class="dwn_resume" href="https://drive.google.com/open?id=0B-3JPbk7E8T8ajRDdXJQdUYxYUU" target="_blank">
+    			<i class="fa fa-cloud-download" aria-hidden="true"></i>  DOWNLOAD RESUME
+    		</a>
+		</div>
+	</div>
+	
+	<section class="section--about" id="section--about">
+		<div class="title-area">
+			<div class="rotate-bg"></div>
+			<div class="title-content">
+				<div class="title-words">AMY LEE</div>
+				<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+			</div>
+		</div>
+	  	<div class="container">
+			<div class="col-md-8 col-md-offset-2 col-xs-12 about-me">
+				<div class="intro">
+					Hi, I am Amy, Chinese name is Meng-Chen Lee.<br>
+					Born in Taipei, Taiwan. I just graduated from National Taiwan University, majoring in 
+					information and management. I have great passion in implementing web applications, escpecially font-end development, and Also have various internship experience in web development. 
+				</div>
+			    <div class="links">
+			    	<a class="icon" href="https://github.com/amy801101" target="_blank">
+			    		<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+			    	</a>
+			    	<a class="icon" href="https://www.linkedin.com/in/mengchenlee" target="_blank">
+			    		<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+			    	</a>
+			    	<a class="icon" href="mailto:amy19911101@gmail.com">
+			    		<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+			    	</a>
+			    </div>
+		    </div>
+	  	</div>
+	</section>
+
+	<section class="section--portfolio" id="section--portfolio">
+		<div class="title-area">
+			<div class="rotate-bg"></div>
+			<div class="title-content">
+				<div class="title-words">PORTFOLIO</div>
+				<i class="fa fa-flask fa-2x" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="container">
+		    <div class="col-md-4 col-sm-6 col-xs-12 features">
+		    	<a href="http://andrewku.github.io/flora/flora_index.html" target="_blank">
+			    	<div class="img-block" onmouseover="handleMouseIn(event, this)" onmouseout="handleMouseOut(event, this)">
+			    		<div class="overlay"></div>
+			    		<img src="images/flora.png" alt="" />
+			    		<div class="cursor">
+			    			<div class="content">
+			    				<div class="name">— FLORA —</div>
+			    				<div class="skill">HTML/CSS, jQuery, Javascript</div>
+			    			</div>
+			    		</div>
+			    	</div>
+		    	</a>
+		    </div>
+		    <div class="col-md-4 col-sm-6 col-xs-12 features">
+		    	<a href="http://www.cs.nccu.edu.tw/~s9940/sna/index.php" target="_blank">
+			    	<div class="img-block" onmouseover="handleMouseIn(event, this)" onmouseout="handleMouseOut(event, this)">
+			    		<div class="overlay"></div>
+			    		<img src="images/youclips.png" alt="" /> 
+			    		<div class="cursor">
+			    			<div class="content">
+			    				<div class="name">— YOUCLIPS —</div>
+			    				<div class="skill">HTML/CSS, jQuery, Javascript</div>
+			    			</div>
+			    		</div> 
+			    	</div>
+		    	</a>
+		    </div>
+		    <div class="col-md-4 col-sm-6 col-xs-12 features">
+		    	<a href="https://event.logres.garena.tw/20151209-xmas/step1" target="_blank">
+			    	<div class="img-block" onmouseover="handleMouseIn(event, this)" onmouseout="handleMouseOut(event, this)">
+			   	    	<div class="overlay"></div>
+			    		<img src="images/thumbnail.png" alt="" />
+			    		<div class="cursor">
+			    			<div class="content">
+			    				<div class="name">— THUMBNAIL MAKER —</div>
+			    				<div class="skill">HTML/CSS, jQuery, Javascript</div>
+			    			</div>
+			    		</div>
+			    	</div>
+		    	</a>
+		    </div>
+		    <div class="col-md-4 col-sm-6 col-xs-12 features" >
+		    	<a href="https://event.jtw.garena.tw/20160203-valentine/post-it" target="_blank">
+			    	<div class="img-block" onmouseover="handleMouseIn(event, this)" onmouseout="handleMouseOut(event, this)">
+			    		<div class="overlay"></div>
+			    		<img src="images/postits.png" alt="" />
+			    		<div class="cursor">
+			    			<div class="content">
+			    				<div class="name">— POST-ITS COLLECTION —</div>
+			    				<div class="skill">HTML/CSS, jQuery, Javascript</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </a>
+		    </div>
+		    <div class="col-md-4 col-sm-6 col-xs-12 features" >
+		    	<a href="https://todolistpractice.herokuapp.com/#/content/0?_k=wgbt3t" target="_blank">
+			    	<div class="img-block" onmouseover="handleMouseIn(event, this)" onmouseout="handleMouseOut(event, this)">
+			    		<div class="overlay"></div>
+			    		<img src="images/todolist.png" alt="" />
+			    		<div class="cursor">
+			    			<div class="content">
+			    				<div class="name">— SIMPLE TODOLIST —</div>
+			    				<div class="skill">HTML/CSS, Javascript, React.js</div>
+			    			</div>
+			    		</div>
+			    	</div>
+		    	</a>
+		    </div>
+		    <div class="col-md-4 col-sm-6 col-xs-12 features" >
+		    	<a href="https://github.com/amy801101/dailyUI" target="_blank">
+			    	<div class="img-block" onmouseover="handleMouseIn(event, this)" onmouseout="handleMouseOut(event, this)">
+			    		<div class="overlay"></div>
+			    		<img src="images/dailyUI.png" alt="" />
+			    		<div class="cursor">
+			    			<div class="content">
+			    				<div class="name">— DAILY UI PRACTICES —</div>
+			    				<div class="skill">HTML/CSS, jQuery, Javascript</div>
+			    			</div>
+			    		</div>
+			    	</div>
+		    	</a>
+		    </div>
+		</div>
+	</section>
+
+	<section class="section--skills" id="section--skills">
+		<div class="title-area">
+			<div class="rotate-bg"></div>
+			<div class="title-content">
+				<div class="title-words">SKILLS</div>
+				<i class="fa fa-wrench fa-2x" aria-hidden="true"></i>
+			</div>
+		</div>
+	  	<div class="container skill-area">
+			<div class="col-md-6 col-xs-12 frontend">
+				<div class="bar-chart">
+					<div class="bar">
+						<div class="percent" style="width: 80%"></div>
+						<div class="title">HTML/CSS </div>
+					</div>
+					<div class="bar">
+						<div class="percent" style="width: 70%"></div>
+						<div class="title">JQUERY</div>
+					</div>
+					<div class="bar">
+						<div class="percent" style="width: 50%"></div>
+						<div class="title">JAVASCRIPT</div>
+					</div>
+					<div class="bar">
+						<div class="percent" style="width: 30%"></div>
+						<div class="title">REACT.JS</div>
+					</div>
+				</div>
+		    </div>
+		    <div class="col-md-6 col-xs-12 backend">
+		    	<div class="bar-chart">
+					<div class="bar">
+						<div class="percent" style="width: 60%"></div>
+						<div class="title">PHP</div>
+					</div>
+					<div class="bar">
+						<div class="percent" style="width: 60%"></div>
+						<div class="title">LARAVEL</div>
+					</div>
+					<div class="bar">
+						<div class="percent" style="width: 50%"></div>
+						<div class="title">SQL</div>
+					</div>
+				</div>
+		    </div>
+	  	</div>
+	</section>
+
+	<section class="section--timeline" id="section--timeline">
+	  	<div class="title-area">
+			<div class="rotate-bg"></div>
+			<div class="title-content">
+				<div class="title-words">TIMELINE</div>
+				<i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="container timeline-area">
+			<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 time-block">
+				<div class="time-year">2016</div>
+				<div class="time-pointer">
+					<div class="head" style="background-color: orange">
+						<i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
+					</div>
+					<div class="line" style="background-color: orange"></div>
+					<div class="end" style="border-color: orange"></div>
+					<div class="bar" style="background-color: orange"></div>
+				</div>
+				<div class="time-content" style="border-color: orange">
+					<h3>Information & management</h3>
+					<h5>National Taiwan University</h5>
+					<p>
+						Graduated at July as master degree.
+					</p>
+					<div class="arrow" style="border-right-color: orange"></div>
+				</div>
+			</div>
+			<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 time-block">
+				<div class="time-year">2015</div>
+				<div class="time-pointer">
+					<div class="head">
+						<i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
+					</div>
+					<div class="line"></div>
+					<div class="end"></div>
+					<div class="bar"></div>
+				</div>
+				<div class="time-content">
+					<h3>Web Application Developer</h3>
+					<h5>Garena Taiwan</h5>
+					<p>
+						Integrate HTML, CSS, Javascript, jQuery, React.js with back-end by PHP framework, Laravel into website. I worked there for one year and a half.
+					</p>
+					<div class="arrow"></div>
+				</div>
+			</div>
+			<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 time-block">
+				<div class="time-year">2014</div>
+				<div class="time-pointer">
+					<div class="head" style="background-color: crimson">
+						<i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
+					</div>
+					<div class="line" style="background-color: crimson"></div>
+					<div class="end" style="border-color: crimson"></div>
+					<div class="bar" style="background-color: crimson"></div>
+				</div>
+				<div class="time-content" style="border-color: crimson">
+					<h3>Computer Science</h3>
+					<h5>Bachelor Degree of National Taiwan University</h5>
+					<p>
+						Graduated at July as bachelor degree.
+					</p>
+					<div class="arrow" style="border-right-color: crimson"></div>
+				</div>
+			</div>
+			<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 time-block">
+				<div class="time-year">2014</div>
+				<div class="time-pointer">
+					<div class="head" style="background-color: darkmagenta">
+						<i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
+					</div>
+					<div class="line" style="background-color: darkmagenta"></div>
+					<div class="end" style="border-color: darkmagenta"></div>
+					<div class="bar" style="background-color: darkmagenta"></div>
+				</div>
+				<div class="time-content" style="border-color: darkmagenta">
+					<h3>Digital Contents & Technologies</h3>
+					<h5>Bachelor Degree of National Taiwan University</h5>
+					<p>
+						Graduated at July as bachelor degree.
+					</p>
+					<div class="arrow" style="border-right-color: darkmagenta"></div>
+				</div>
+			</div>
+			<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 time-block">
+				<div class="time-year">2013</div>
+				<div class="time-pointer">
+					<div class="head" style="background-color: gold">
+						<i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
+					</div>
+					<div class="line" style="background-color: gold"></div>
+					<div class="end" style="border-color: gold"></div>
+					<div class="bar" style="background-color: gold"></div>
+				</div>
+				<div class="time-content" style="border-color: gold">
+					<h3>QA Tester Intern</h3>
+					<h5>Trend Micro Taiwan</h5>
+					<p>
+						Product testing and compose technical product documents. I worked there for six months.
+					</p>
+					<div class="arrow" style="border-right-color: gold"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+	  <div class="container">
+	    <ul>
+	      	<li>
+	      		<a class="icon" href="https://github.com/amy801101" target="_blank">
+			    	<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+			    </a>
+			</li>
+	      	<li>
+	      		<a class="icon" href="https://www.linkedin.com/in/mengchenlee" target="_blank">
+			    	<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+			    </a>
+	      	</li>
+	      	<li>
+	      		<a class="icon" href="mailto:amy19911101@gmail.com">
+			    	<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+			    </a>
+	      	</li>
+	    </ul>
+	    <p>&copy; Amy Lee 2016 All rights reserved.</p>
+	  </div>
+	</footer>
+	
+	<script>
+
+		function toggle_drop(ele) {
+			var drop = document.getElementsByClassName('mobile-drop')[0];
+			if(!drop.classList.contains('showMenuAnim')){
+				drop.style.display = 'block';
+				drop.classList.add('showMenuAnim');
+			} else {
+				drop.style.display = 'none';
+				drop.classList.remove('showMenuAnim');
+			}
+		}
+
+		/* for typing effects */
+		var descriptionElements = document.getElementsByClassName('description');
+		// console.log(descriptionElements[0]);
+
+		refireAnim(descriptionElements[0], 'typingAnim');
+		Array.prototype.forEach.call(descriptionElements , function(ele, idx){
+			ele.addEventListener('animationend', function(event){
+				if(idx < descriptionElements.length-1){
+					descriptionElements[idx+1].style.width = '0';
+					refireAnim(descriptionElements[idx+1], 'typingAnim');
+				} else {
+					descriptionElements[0].style.width = '0';
+					refireAnim(descriptionElements[0], 'typingAnim');
+				}
+			});
+		});
+		
+		// function hideAllDescriptions(){
+		// 	Array.prototype.forEach.call(descriptionElements , function(ele, idx){
+		// 		descriptionElements[idx].style.visibility = 'hidden';
+		// 	});
+		// }
+
+		function refireAnim(ele, anim){
+			/* for refiring anim */
+			// ele.style.width = '0';
+			ele.style.animationPlayState = "paused";
+			ele.classList.remove(anim);
+		  	setTimeout(function() {
+		  		ele.style.animationPlayState = "running";
+		    	ele.classList.add(anim);
+		  	}, 0);
+		}
+		/* typing effect ends ----- */
+
+		/* portofolio animation ----- */
+
+		var portfolio_mouse_in = false;
+		var portfolio_anim_arr = [];
+		var portfolio_anim_duration = 500; //.5s for each
+		// (function(){
+		// })();
+
+		function handleMouseIn(event, target){
+			/*
+			var cursor = document.getElementById('cursor');
+			var portfolio = document.getElementsByClassName('section--primary')[0];
+			// cursor.style.left = (event.clientX + document.body.scrollLeft - portfolio.offsetLeft)+'px';
+			// cursor.style.top = (event.clientY + document.body.scrollTop - portfolio.offsetTop)+'px';
+			cursor.style.left = event.pageX + 'px';
+			cursor.style.top = event.pageY + 'px';
+			*/
+
+			console.log('in');
+			if(!portfolio_mouse_in){
+				portfolio_mouse_in = true;
+				for (var i = 0; i < target.childNodes.length; i++) {
+					var child = target.childNodes[i];
+				    if (child.className && child.className.match(/\bcursor\b/)) {
+				  		//remove all other anim class
+				  		removeAllAnimClass(child);
+			      		console.log('move in');
+			      		var anim = getMouseInAnimClass(event);
+			      		refireAnim(child, anim);
+				      	break;
+				    }        
+				}
+			}
+
+		}
+
+		function handleMouseOut(event, target){
+   			if(portfolio_mouse_in){
+				portfolio_mouse_in = false;
+				console.log('out');
+				for (var i = 0; i < target.childNodes.length; i++) {
+					var child = target.childNodes[i];
+				    if (child.className && child.className.match(/\bcursor\b/)) {
+				    	removeAllAnimClass(child);
+			      		console.log('move out');
+			      		var anim = getMouseOutAnimClass(event);
+			      		refireAnim(child, anim);
+				      	break;
+				    }        
+				}
+			}
+		}
+
+		function removeAllAnimClass(ele){
+			var anim_class_arr = [
+				'moveInFromLeftAnim',
+				'moveInFromRightAnim',
+				'moveInFromTopAnim',
+				'moveInFromBottomAnim',
+				'moveOutToLeftAnim',
+				'moveOutToRightAnim',
+				'moveOutToTopAnim',
+				'moveOutToBottomAnim'
+			];
+			for(idx in anim_class_arr){
+				ele.classList.remove(anim_class_arr[idx]);
+			}
+		}
+
+		function getMouseInAnimClass(event){
+			if(Math.abs(event.movementX) > Math.abs(event.movementY)){
+				//horizonal
+				if(event.movementX > 0 ){
+					return 'moveInFromLeftAnim';
+				} else {
+					return 'moveInFromRightAnim';
+				}
+			} else {
+				if(event.movementY > 0 ){
+					return 'moveInFromTopAnim';
+				} else {
+					return 'moveInFromBottomAnim';
+				}
+			}
+		}
+
+		function getMouseOutAnimClass(event){
+			if(Math.abs(event.movementX) > Math.abs(event.movementY)){
+				//horizonal
+				if(event.movementX > 0 ){
+					return 'moveOutToRightAnim';
+				} else {
+					return 'moveOutToLeftAnim';
+				}
+			} else {
+				if(event.movementY > 0 ){
+					return 'moveOutToBottomAnim';
+				} else {
+					return 'moveOutToTopAnim';
+				}
+			}
+		}
+
+		function hideNodesByClassName(class_name){
+			var nodes = document.getElementsByClassName(class_name);
+			for(var i = 0; i < nodes.length; i++) {
+				nodes[i].style.visibility = 'hidden';
+			}
+		}
+		/* portofolio animation end ----- */
+
+		window.addEventListener('scroll', function(){
+			var top  = window.pageYOffset || document.documentElement.scrollTop,
+    			left = window.pageXOffset || document.documentElement.scrollLeft;
+
+    		var skills_part = document.getElementsByClassName("section--skills")[0];
+    		var skills_part_top = skills_part.offsetTop;
+    		var skills_part_bottom = skills_part.offsetTop + skills_part.offsetHeight;
+
+    		var bar_arr = document.getElementsByClassName('percent');
+    		if(top >= skills_part_top && top <= skills_part_bottom){
+    			console.log(bar_arr);
+				for(var i = 0; i < bar_arr.length; i++){
+    				bar_arr[i].classList.add('progressFromRightAnim');
+    			} 
+
+    		} else {
+    			for(var i = 0; i < bar_arr.length; i++){
+    				bar_arr[i].classList.remove('progressFromRightAnim');
+    			} 
+    		}
+		});
+	</script>
+
+
+</body>
+</html>
