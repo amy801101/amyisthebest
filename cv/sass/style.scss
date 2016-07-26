@@ -331,8 +331,8 @@ $title_area_width: 100px;
       background-size: cover;
       -webkit-background-size: cover;
       font-size: 150%;
-      background-attachment: scroll;
-      -webkit-background-attachment: scroll;
+      background-attachment: fixed;
+      -webkit-background-attachment: fixed;
     }
 
     .container{
