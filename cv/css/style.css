@@ -47,6 +47,9 @@ body {
   line-height: 1.45;
   color: #141414;
   position: relative; }
+  @media (max-width: 65em) {
+    body {
+      font-size: 150%; } }
 
 a {
   text-decoration: none; }
@@ -69,7 +72,7 @@ img {
   padding: .8rem 1rem .9rem;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
-  @media (max-width: 45em) {
+  @media (max-width: 65em) {
     .btn {
       padding: .5rem .7rem .6rem;
       font-size: 1rem; } }
@@ -88,7 +91,7 @@ body {
 
 .title-area {
   position: relative;
-  margin: 0 auto 3% auto;
+  margin: 3% auto;
   padding: 1% 0;
   text-align: center;
   width: 100px;
@@ -118,6 +121,25 @@ body {
     .title-area .title-content .title-words {
       font-size: 12px;
       font-size: 1.6em; }
+  @media (max-width: 65em) {
+    .title-area {
+      width: 400px;
+      height: 200px; }
+      .title-area .rotate-bg {
+        width: 130px;
+        height: 130px; }
+      .title-area .title-content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        padding-top: 15%;
+        /* absolute horizonal center*/
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        font-size: 1.25em; } }
 
 .navbar {
   position: fixed;
@@ -127,7 +149,7 @@ body {
   font-size: 3em;
   margin: 0 auto;
   padding: 1.5% 5%;
-  background-image: url(../images/noise.png);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
   left: 0;
   top: 0; }
@@ -152,7 +174,7 @@ body {
       display: none; }
     .navbar .right .mobile-drop {
       display: none; }
-    @media (max-width: 45em) {
+    @media (max-width: 65em) {
       .navbar .right .nav-btn {
         display: none; }
       .navbar .right .mobile-bar {
@@ -201,6 +223,9 @@ body {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
+  @media (max-width: 65em) {
+    .bg-image {
+      font-size: 150%; } }
   .bg-image .container {
     display: inline-block;
     vertical-align: middle;
@@ -236,6 +261,11 @@ body {
         visibility: visible;
         animation: typing 7s steps(40, end);
         animation-fill-mode: forwards; }
+        @media (max-width: 65em) {
+          .bg-image .container .description-area .typingAnim {
+            visibility: visible;
+            animation: typing-mobile 7s steps(40, end);
+            animation-fill-mode: forwards; } }
     .bg-image .container .dwn_resume {
       padding: .5em;
       color: white;
@@ -256,12 +286,17 @@ body {
   border-radius: 50%;
   background: #FFF url(../images/avatar.jpg) repeat scroll 50% 0%;
   background-size: 200px auto; }
+  @media (max-width: 65em) {
+    .avatar .round-border {
+      width: 300px;
+      height: 300px;
+      background-size: 150% auto; } }
 
 section {
   background: #fff;
   color: #1c262b;
   padding: 4.5rem 0; }
-  @media (max-width: 45em) {
+  @media (max-width: 65em) {
     section {
       padding: 2rem 0; } }
   section.section--portfolio {
@@ -284,7 +319,7 @@ section {
     font-size: 2rem;
     font-weight: 300;
     margin: 0 0 1rem; }
-    @media (max-width: 45em) {
+    @media (max-width: 65em) {
       section h3 {
         font-size: 1.5rem; } }
   section li {
@@ -301,7 +336,7 @@ section {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300; }
 .about-me .links {
-  margin: 0 auto;
+  margin: 3% auto;
   text-align: center; }
   .about-me .links .icon {
     display: inline-block;
@@ -310,11 +345,21 @@ section {
     transform: rotate(45deg);
     border: 1px solid orange;
     text-align: center;
-    margin: 5% 1%; }
+    margin: 5% 2%; }
     .about-me .links .icon i {
       transform: rotate(-45deg);
       line-height: 35px;
       color: orange; }
+  @media (max-width: 65em) {
+    .about-me .links .icon {
+      width: 80px;
+      height: 80px;
+      margin: 5% 3%; }
+      .about-me .links .icon i {
+        transform: rotate(-45deg);
+        line-height: 80px;
+        color: orange;
+        font-size: 3.5em; } }
 
 .features {
   text-align: center;
@@ -365,7 +410,7 @@ section {
           font-size: 2vw; }
         .features .img-block .cursor .content .skill {
           font-size: 1.5vw; }
-      @media (max-width: 45em) {
+      @media (max-width: 65em) {
         .features .img-block .cursor {
           visibility: visible;
           text-align: center; }
@@ -413,7 +458,7 @@ section {
       left: 0;
       animation: moveOutToBottom .5s;
       animation-fill-mode: forwards; }
-  @media (max-width: 45em) {
+  @media (max-width: 65em) {
     .features {
       width: 100%;
       margin: 0;
@@ -423,7 +468,7 @@ section {
         border: none; } }
   .features i {
     margin: 0 0 2rem 0; }
-    @media (max-width: 45em) {
+    @media (max-width: 65em) {
       .features i {
         font-size: 1.5rem;
         width: 2rem;
@@ -433,7 +478,7 @@ section {
   .features p {
     margin: 0 0 1rem 0;
     font-size: 1.5rem; }
-    @media (max-width: 45em) {
+    @media (max-width: 65em) {
       .features p {
         margin-left: 3rem; } }
 
@@ -567,6 +612,9 @@ section {
           border-left: 1em solid yellow;
           border-top: 1em solid transparent;
           border-bottom: 1em solid transparent; }
+  @media (max-width: 65em) {
+    .skill-area * {
+      height: 400px; } }
 
 .progressFromRightAnim {
   animation: progressFromRight 1s;
@@ -579,10 +627,10 @@ section {
     height: 200px;
     /* end of time-year*/
     /*end of time-pointer*/ }
-    @media (max-width: 45em) {
+    @media (max-width: 65em) {
       .timeline-area .time-block {
         height: auto;
-        padding: 2% 1%;
+        padding: 2% 0;
         margin-bottom: 5%; } }
     .timeline-area .time-block .time-year {
       display: inline-block;
@@ -595,10 +643,9 @@ section {
       left: 0;
       vertical-align: top;
       letter-spacing: 3px; }
-      @media (max-width: 45em) {
+      @media (max-width: 65em) {
         .timeline-area .time-block .time-year {
-          width: auto;
-          height: 70px; } }
+          width: auto; } }
     .timeline-area .time-block .time-pointer {
       position: relative;
       display: inline-block;
@@ -644,9 +691,13 @@ section {
         width: 30px;
         right: -3px;
         z-index: -1; }
-      @media (max-width: 45em) {
+      @media (max-width: 65em) {
         .timeline-area .time-block .time-pointer {
           height: 70px; }
+          .timeline-area .time-block .time-pointer .head {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px; }
           .timeline-area .time-block .time-pointer .line {
             display: none; }
           .timeline-area .time-block .time-pointer .end {
@@ -666,12 +717,14 @@ section {
       padding: 2% 3%;
       font-size: 1em;
       font-family: 'PT Sans Narrow', sans-serif; }
-      .timeline-area .time-block .time-content h3 {
+      .timeline-area .time-block .time-content .title {
+        font-size: 2em;
         text-align: left;
         letter-spacing: 2px;
         margin-bottom: 0;
         text-transform: uppercase; }
-      .timeline-area .time-block .time-content h5 {
+      .timeline-area .time-block .time-content .org {
+        font-size: 1.5em;
         text-align: left;
         color: gold;
         letter-spacing: 1px;
@@ -693,11 +746,13 @@ section {
         border-right: 10px solid turquoise;
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent; }
-      @media (max-width: 45em) {
+      @media (max-width: 65em) {
         .timeline-area .time-block .time-content {
           display: block;
           width: 100%;
-          margin-left: auto; }
+          margin: 3% auto;
+          padding: 5%;
+          font-size: 150%; }
           .timeline-area .time-block .time-content .arrow {
             transform: rotate(90deg);
             top: -15px;
@@ -728,6 +783,19 @@ footer {
           transform: rotate(-45deg);
           line-height: 30px;
           color: white; }
+      @media (max-width: 65em) {
+        footer ul li {
+          margin: 5% 3%; }
+          footer ul li .icon {
+            width: 80px;
+            height: 80px; }
+            footer ul li .icon i {
+              transform: rotate(-45deg);
+              line-height: 80px;
+              font-size: 5em; } }
+  @media (max-width: 65em) {
+    footer p {
+      font-size: 3em; } }
 
 @keyframes showMenu {
   from {
@@ -738,9 +806,18 @@ footer {
   0% {
     width: 0; }
   50% {
-    width: 325px; }
+    width: 50%; }
   70% {
-    width: 325px; }
+    width: 50%; }
+  100% {
+    width: 0; } }
+@keyframes typing-mobile {
+  0% {
+    width: 0; }
+  50% {
+    width: 100%; }
+  70% {
+    width: 100%; }
   100% {
     width: 0; } }
 @keyframes typing2 {
