@@ -216,6 +216,8 @@ body {
   background-image: linear-gradient(rgba(52, 73, 94, 0.1), rgba(52, 73, 94, 0.1)), url("../images/bg.jpg");
   background-image: -webkit-linear-gradient(rgba(52, 73, 94, 0.1), rgba(52, 73, 94, 0.1)), url("../images/bg.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  min-height: 100%;
   background-position: -25% 0%, center center;
   background-repeat: repeat, no-repeat;
   background-attachment: scroll, fixed;
