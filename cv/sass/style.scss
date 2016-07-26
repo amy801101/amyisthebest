@@ -325,9 +325,12 @@ $title_area_width: 100px;
     }
 
     @media (max-width: $bp-s) {
-      // background-image: url("../images/bg.jpg");
-      // background-position: center center;
-      // font-size: 150%;
+      background: url("../images/bg.jpg") no-repeat center center fixed;
+      min-height: 100%;
+      -webkit-min-height: 100%;
+      background-size: cover;
+      -webkit-background-size: cover;
+      font-size: 150%;
     }
 
     .container{
