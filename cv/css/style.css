@@ -236,7 +236,9 @@ body {
       -webkit-min-height: 100%;
       background-size: cover;
       -webkit-background-size: cover;
-      font-size: 150%; } }
+      font-size: 150%;
+      background-attachment: scroll;
+      -webkit-background-attachment: scroll; } }
   .bg-image .container {
     display: inline-block;
     vertical-align: middle;
