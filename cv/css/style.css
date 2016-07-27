@@ -1,7 +1,7 @@
 /* Reset CSS */
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
-@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100|PT+Sans+Narrow|Rambla|Roboto+Condensed:400,300);
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100,300,400|PT+Sans+Narrow|Rambla|Roboto+Condensed:400,300);
 ol,
 ul {
   list-style: none; }
@@ -87,7 +87,8 @@ img {
 /* End of Basic setup */
 body {
   box-sizing: border-box;
-  font-family: 'Advent Pro', sans-serif; }
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 300; }
 
 .title-area {
   position: relative;
@@ -120,6 +121,7 @@ body {
     padding-top: 15%; }
     .title-area .title-content .title-words {
       font-size: 12px;
+      font-weight: bolder;
       font-size: 1.6em; }
   @media (max-width: 65em) {
     .title-area {
@@ -148,11 +150,14 @@ body {
   color: white;
   font-size: 3em;
   margin: 0 auto;
-  padding: 4% 5%;
+  padding: 2% 3%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
   left: 0;
   top: 0; }
+  @media (max-width: 65em) {
+    .navbar {
+      padding: 4% 5%; } }
   .navbar .left {
     position: relative;
     left: 0;

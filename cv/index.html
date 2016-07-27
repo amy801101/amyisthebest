@@ -13,7 +13,7 @@
 	<div class="navbar">
 		<div class="left"><a href="#header">AMY  LEE</a></div>
 		<div class="right">
-			<a class="nav-btn" href="#section--timeline">
+			<a href="#section--timeline" class="nav-btn">
 				TIMELINE
 			</a>
 			<a class="nav-btn" href="#section--skills">
@@ -25,10 +25,10 @@
 			<a class="nav-btn" href="#section--about">
 				ABOUT ME
 			</a>
-			<a href="javascript:void(0)" onclick="toggle_drop(this)" class="mobile-bar">
+			<a href="javascript:void(0)" onclick="toggleDrop(this)" class="mobile-bar">
 				<i class="fa fa-bars" aria-hidden="true"></i>
 			</a>
-			<ul class="mobile-drop" onclick="toggle_drop(this)">
+			<ul class="mobile-drop" onclick="toggleDrop(this)">
 				<li>
 					<a href="#section--about">ABOUT ME</a>
 				</li>
@@ -374,7 +374,7 @@
 	
 	<script>
 
-		function toggle_drop(ele) {
+		function toggleDrop(ele) {
 			var drop = document.getElementsByClassName('mobile-drop')[0];
 			if(!drop.classList.contains('showMenuAnim')){
 				drop.style.display = 'block';
@@ -385,7 +385,15 @@
 			}
 		}
 
-		/* for typing effects */
+		// function scrollToElementById(ele_id) {
+		// 	console.log('?');
+		//    	var ele = document.getElementById(ele_id);
+		// 	if (!!ele && ele.scrollIntoView) {
+		//        ele.scrollIntoView();
+		//    	}
+		// }
+
+		/* typing animation */
 		var descriptionElements = document.getElementsByClassName('description');
 		// console.log(descriptionElements[0]);
 
@@ -418,10 +426,10 @@
 		    	ele.classList.add(anim);
 		  	}, 0);
 		}
-		/* typing effect ends ----- */
+		/* typing animation ends ----- */
+
 
 		/* portofolio animation ----- */
-
 		var portfolio_mouse_in = false;
 		var portfolio_anim_arr = [];
 		var portfolio_anim_duration = 500; //.5s for each
@@ -429,15 +437,6 @@
 		// })();
 
 		function handleMouseIn(event, target){
-			/*
-			var cursor = document.getElementById('cursor');
-			var portfolio = document.getElementsByClassName('section--primary')[0];
-			// cursor.style.left = (event.clientX + document.body.scrollLeft - portfolio.offsetLeft)+'px';
-			// cursor.style.top = (event.clientY + document.body.scrollTop - portfolio.offsetTop)+'px';
-			cursor.style.left = event.pageX + 'px';
-			cursor.style.top = event.pageY + 'px';
-			*/
-
 			console.log('in');
 			if(!portfolio_mouse_in){
 				portfolio_mouse_in = true;
@@ -531,6 +530,7 @@
 		}
 		/* portofolio animation end ----- */
 
+		/* skills animation */
 		window.addEventListener('scroll', function(){
 			var top  = window.pageYOffset || document.documentElement.scrollTop,
     			left = window.pageXOffset || document.documentElement.scrollLeft;
@@ -552,6 +552,7 @@
     			} 
     		}
 		});
+		/* skills animation end */
 	</script>
 </body>
 </html>
