@@ -8,7 +8,7 @@
 	<meta property="og:description" content="Hi, I am Amy. My Chinese name is Meng-Chen Lee.
 	Born in Taipei, Taiwan. I just graduated from National Taiwan University, majoring in 
 	information and management. I have great passion in implementing web applications, escpecially font-end development, and Also have various internship experience in web development." />
-	<meta property="og:url"content="http://amy801101.github.io/amyisthebest/cv/index.html" />
+	<meta property="og:url" content="http://amy801101.github.io/amyisthebest/cv/index.html" />
 	<meta property="og:title" content="Hi, I am Amy Lee" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 
-    		<a class="dwn_resume" href="https://drive.google.com/open?id=0B-3JPbk7E8T8ajRDdXJQdUYxYUU" target="_blank">
+    		<a class="dwn_resume" href="https://drive.google.com/file/d/0B-3JPbk7E8T8cU5mSDVSa1doSnc/view" target="_blank">
     			<i class="fa fa-cloud-download" aria-hidden="true"></i>  DOWNLOAD RESUME
     		</a>
 		</div>
@@ -263,6 +263,25 @@
 			<div class="col-md-10 col-md-offset-1 col-xs-12 time-block">
 				<div class="time-year">2016</div>
 				<div class="time-pointer">
+					<div class="head" style="background-color: limegreen">
+						<i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
+					</div>
+					<div class="line" style="background-color: limegreen"></div>
+					<div class="end" style="border-color: limegreen"></div>
+					<div class="bar" style="background-color: limegreen"></div>
+				</div>
+				<div class="time-content" style="border-color: limegreen">
+					<div class="title">Front-end Engineer</div>
+					<div class="org">cnYes.com</div>
+					<p>
+						Develop and execute features in scrum team using  HTML, CSS, SASS, React.js and Redux. Collaborate with PMs, designers and back-end engineers, fulfil innovative web applications related to investment and remake the legacy websites.
+					</p>
+					<div class="arrow" style="border-right-color: limegreen"></div>
+				</div>
+			</div>
+			<div class="col-md-10 col-md-offset-1 col-xs-12 time-block">
+				<div class="time-year">2016</div>
+				<div class="time-pointer">
 					<div class="head" style="background-color: orange">
 						<i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
 					</div>
@@ -381,6 +400,18 @@
 	  </div>
 	</footer>
 	
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-71236811-2', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+	
 	<script>
 
 		function toggleDrop(ele) {
@@ -446,7 +477,6 @@
 		// })();
 
 		function handleMouseIn(event, target){
-			console.log('in');
 			if(!portfolio_mouse_in){
 				portfolio_mouse_in = true;
 				for (var i = 0; i < target.childNodes.length; i++) {
@@ -454,10 +484,9 @@
 				    if (child.className && child.className.match(/\bcursor\b/)) {
 				  		//remove all other anim class
 				  		removeAllAnimClass(child);
-			      		console.log('move in');
-			      		var anim = getMouseInAnimClass(event);
-			      		refireAnim(child, anim);
-				      	break;
+			      	var anim = getMouseInAnimClass(event);
+			      	refireAnim(child, anim);
+				      break;
 				    }        
 				}
 			}
@@ -467,15 +496,13 @@
 		function handleMouseOut(event, target){
    			if(portfolio_mouse_in){
 				portfolio_mouse_in = false;
-				console.log('out');
 				for (var i = 0; i < target.childNodes.length; i++) {
 					var child = target.childNodes[i];
 				    if (child.className && child.className.match(/\bcursor\b/)) {
 				    	removeAllAnimClass(child);
-			      		console.log('move out');
-			      		var anim = getMouseOutAnimClass(event);
-			      		refireAnim(child, anim);
-				      	break;
+			      	var anim = getMouseOutAnimClass(event);
+			      	refireAnim(child, anim);
+				      break;
 				    }        
 				}
 			}
@@ -550,11 +577,9 @@
 
     		var bar_arr = document.getElementsByClassName('percent');
     		if(top >= skills_part_top && top <= skills_part_bottom){
-    			console.log(bar_arr);
-				for(var i = 0; i < bar_arr.length; i++){
+					for(var i = 0; i < bar_arr.length; i++){
     				bar_arr[i].classList.add('progressFromRightAnim');
     			} 
-
     		} else {
     			for(var i = 0; i < bar_arr.length; i++){
     				bar_arr[i].classList.remove('progressFromRightAnim');

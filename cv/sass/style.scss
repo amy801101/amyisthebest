@@ -44,10 +44,9 @@ $color-green: #8fca53;
 $color-purple: #68647c;
 $color-gold: #efb05a;
 
-
 $color-primary: $color-blue;
 
-$bp-s: 65em; //700px; //1em就預設為16px
+$bp-s: 65em; 
 $bp-xs: 40em; 
 
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
@@ -318,7 +317,7 @@ $title_area_width: 100px;
     min-height: 100%;
     background-position: -25% 0%, center center;
     background-repeat: repeat, no-repeat;
-    background-attachment: scroll, fixed; //linear-gradient+scroll, fixed的神奇之處...
+    background-attachment: scroll, fixed; //linear-gradient+scroll, magical fixed...
     text-align: center;
     color: white;
 
@@ -606,10 +605,10 @@ section{
           vertical-align: middle;
 
           .name{
-            font-size: 2vw;
+            font-size: 2.5em;
           }
           .skill{
-            font-size: 1.5vw;
+            font-size: 1.75em;
           }
         }
 

@@ -425,9 +425,9 @@ section {
         display: inline-block;
         vertical-align: middle; }
         .features .img-block .cursor .content .name {
-          font-size: 2vw; }
+          font-size: 2.5em; }
         .features .img-block .cursor .content .skill {
-          font-size: 1.5vw; }
+          font-size: 1.75em; }
       @media (max-width: 65em) {
         .features .img-block .cursor {
           visibility: visible;
