@@ -508,7 +508,8 @@ section {
     height: 300px; }
   .skill-area .frontend {
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 40px; }
     .skill-area .frontend:before {
       content: '';
       display: inline-block;
